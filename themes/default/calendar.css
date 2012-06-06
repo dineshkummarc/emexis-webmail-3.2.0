@@ -1,0 +1,181 @@
+/* 
+    Document   : calendar
+    Created on : 05/04/2011, 14:29:08
+    Author     : bruno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.done{
+    color:green;
+    display:none;
+}
+root { 
+    display: block;
+}
+#calendar{
+    display:none;
+}
+.miniCalendar{
+    position:relative;
+    bottom:0px;
+    display:none;
+}
+#dialogFormCreateEvent{
+    display: none;
+}
+.eventColor{
+    cursor: pointer;
+    text-align: center;
+    width:20px;
+    height:20px;
+    float:left;
+    margin-left:3px;
+}
+.eventColor b{
+    display:none;
+}
+.greenEvent{
+    background-color:green;
+}
+.redEvent{
+    background-color:red;
+}
+.grayEvent{
+    background-color:gray;
+}
+.blueEvent{
+    background-color:blue;
+}
+.redEvent b,.blueEvent b{
+    color:white;
+}
+.orangeEvent{
+    background-color:orangered;
+}
+.selectDay *{
+    color:red !important;
+    font-weight:bold !important;
+}
+.bubble div{
+    margin:3px;
+}
+.bubble{
+    z-index:100;
+    display:none;
+    border:1px solid #4362bd;
+    background-color:white;
+    color:black;
+    font-weight:bold;
+    position:absolute;
+    width:260px;
+    height:150px;
+    z-index:2;
+    top:0px;
+    left:0px;
+}
+.bubble .descEvent{
+    font-size:14px;
+}
+.bubble td{
+    font-size:11px;
+}
+.bubble .titleEventBuble{
+    padding-bottom:4px;
+    font-weight:bold;
+    font-size:14pt;
+    color:#4362bd;
+}
+.controlEvent{
+    text-align:right !important;
+}
+.descriptionText{
+    eight:20px;
+    overflow:auto;
+}
+.bubble .controlE a,
+.bubble .controlE a:link,
+.bubble .controlE a:visited,
+.bubble .controlE a:hover{
+    font-weight:bold;
+    color: #4362bd;
+    font-size: 10pt;
+    text-decoration:none;
+}
+.selectMember select{
+    width:144px;
+}
+.selectMember{
+    height:65px;
+}
+.listOut, .listIn{
+    height: 65px;
+}
+.labelOwner{
+   font-size:smaller;
+}
+.guessConf{
+    color:green;
+}
+.guessCancel{
+    color:red;
+}
+#descriptionEvent{
+    width:279px;
+}
+#ui-datepicker-div{
+    border-color:white !important;
+}
+.ui-datepicker-trigger{    
+}
+.labelDialog{
+    font-size:12px;
+    font-weight:bold;
+}
+.tab_content_event .btnDialogEvent{
+    font-size:12px !important;
+}
+#text_guest{
+    padding-top:3px;
+    padding-bottom:3px;
+    font-size:12px !important;
+    width:435px !important;
+}
+.tab_content_event textarea,.tab_content_event select{
+    font-size:12px !important;
+}
+.tab_content_event *{
+    font-size:12px;
+}
+.tab_content_event{
+    height:300px;
+}
+#guest_selected{
+    width:435px !important;
+    height:100px;
+}
+#list{
+    display:none;
+}
+.labelListAgenda{
+    font-size:10pt;
+    text-align:left;
+}
+.labelTime{
+    font-size:8pt;
+    font-weight: bold;
+}
+#list tr td{
+    border-bottom:1px solid gray !important;
+}
+#importEvent{
+    display:none;
+}
+.inputSearchEvent{
+    
+}

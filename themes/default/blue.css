@@ -1,0 +1,364 @@
+@import url("left.css");
+@import url("webmail.css");
+@import url("calendar.css");
+
+body{
+    background-color:white;    
+}
+.left{
+    background-color:white;
+    display:none;
+}
+.barcontrol>div{
+    border:1pt solid #4362bd;
+    background-color:white;
+}
+.right,#calendar{
+    background-color:white;
+}
+.listmailHorizontal{
+    border:1pt solid #4362bd;
+}
+.readHorizontal{
+    border:1pt solid #4362bd;
+}
+#divisorVertical{
+    border-right:1px solid #4362bd;
+}
+#divisorVertical,#divisorLeft{
+    border-left:1px solid #4362bd;
+}
+a:link,a:visited,a:hover{
+    color:black;
+}
+.loader .text{
+    color:blue;
+    background-color:white;
+}
+
+.highlight{
+    background-color:#7b9dff !important;
+    color:black;
+}
+
+.contextMenu {
+    border: solid 1px #CCC;
+    background: #c1cbda;
+}
+
+.contextMenu A {
+    color: #333;
+}
+
+.contextMenu LI.hover A {
+    color: #FFF;
+    background-color: #4e71d4;
+}
+
+.contextMenu LI.disabled A {
+    color: #AAA;
+    cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+    background-color: transparent;
+}
+
+.contextMenu LI.separator {
+    border-top: solid 1px #CCC;
+}
+.dragMSg,.dropOver{
+    background-color: #becceb;
+}
+.dropMSg{
+    background-color: white;
+}
+.headerMsgVer{
+    background-color:silver !important;
+    background-color:silver;    
+    border-bottom:1px solid #4362bd;
+    color:white;
+}
+.tableHeader{
+    background-color:#7b9dff !important;    
+}
+
+.tableHeader{  
+    background-color:#7b9dff !important;
+}
+.headerMsg{ 
+    background-color:silver !important;
+}
+.headerMsg div{
+    background-color:silver !important;
+    color:white;
+}
+.gridmail,.gridmail td {
+    border-bottom-color:white !important;
+    border-top-color:white !important;
+}
+#labelBox{
+    color:white;
+    background-color:#7b9dff;
+    border-top:1px solid #4362bd;
+    border-bottom:1px solid #4362bd;
+}
+.labelFolder,.labelQuota,.labelListAgenda{
+    border:1px solid #4362bd;
+    background-color:#7b9dff;
+}
+.labelFolder{
+    border-right:0px !important;
+}
+.subjectMsg{
+    border-bottom:1px solid #7b9dff;
+    border-right:1px solid #7b9dff;
+    background-color:#c1cbda !important;
+    color:black;
+}
+.formatHeader div:first{
+    background-color:silver;
+    color:white;    
+}
+/* Ao clicar para ler o email*/
+.readMailBack{
+    background-color:#2647a6!important;
+    color:white;
+}
+.readMailBack a:hover,.readMailBack a:visited,.readMailBack a{
+    background-color:transparent;
+    color:white !important;
+}
+.ui-dialog-buttonset button{
+    background-color:silver;    
+}
+.textSubject{
+    background-color: transparent !important;
+}
+#closeall{
+    background-color:#6a6a6a;
+    color:white;    
+}
+.minicompose,.miniread,.minioptions,.minifolder,.minicontacts,.minipic{
+    border:1px groove #4362bd;   
+}
+
+.labelNumMSg,.labelNumCont{
+    background-color:#4362bd;    
+    color:white;
+}
+.compose input[type=text]{
+    border:1px solid #7b9dff !important;
+}
+.compose td .to,.compose td .cc,.compose td .bcc,.compose td .subject,.attachLabel{
+    color:#4362bd;
+    font-weight:bold;
+}
+.ShowHideCC,.ShowHideBCC,.divCCBCC{
+    color:#5a8cff;   
+}
+.tableHeader thead th{
+    color:black;
+    border-top:1px solid #4362bd;
+}
+.tableHeader thead th:first{
+    color:black;
+}
+.tableHeader thead th:last{ 
+    color:black;
+}
+.header .background {    
+    background:url('../../images/blue/backtop_blue.png') no-repeat;
+}
+.header td{
+    border-top:1px solid #4362bd;
+    border-bottom:1px solid #4362bd;
+}
+.header td:fist{
+    border-left:1px solid silver;
+}
+.backTopCompose{
+    background:url("../../images/backtopcompose.png") no-repeat;
+}
+#inputAttach{        
+    background: url(../../images/backgroundattach.png);
+}
+
+.flagMsgRead{
+    background: url(../../images/mail_read.png);
+}
+
+#numPage{
+    background-color: #4e71d4;
+}
+
+.btnDeleteAttach{
+    color:#90abb8 !important;
+    background:url(../../images/remove_attach.png) no-repeat center;    
+}
+#inputAttach input[type=file]{
+    border: 1px solid #b0b0b0;
+    background: #ecedf1;
+    color: #585858;
+}
+
+.btnUpload,.btnDialogEvent,.btnIden,#inputAttach input,.btnSaveOption,.btnCancelOption,.ContInfo .btnContact, .ContInfo input[type=button], #actionToField{
+    background-color:white;    
+    color:black;
+    border:1px solid black;
+}
+
+.hideBcc{
+    color:#3366cc;
+}
+#optionSearch,.menuDrop{
+    border:1px solid #4362bd;
+    color:#4362bd;
+    background-color:#c1cbda;
+}
+
+/* root element for tabs  */
+ul.tabs,ul.tabsContactsDialog {
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+}
+ul.tabs li,ul.tabsContactsDialog li{
+    border: 1px solid #999;
+    background: #c1cbda;
+}
+ul.tabs li a, ul.tabsContactsDialog li a{
+    color: #000;
+    border: 1px solid #fff;
+}
+ul.tabs li a:hover, ul.tabsContactsDialog li a:hover {
+    background: #7b9dff;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabsContactsDialog li.active, html ul.tabsContactsDialog li.active a:hover{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+.tab_container {
+    border: 1px solid #999;
+    background: #fff;
+}
+.tab_content h2 {
+    border-bottom: 1px dashed #ddd;
+}
+.tab_content h3 a{
+    color: #254588;
+}
+
+#contentOptions input,textarea{
+    background-color: #c1cbda;
+}
+
+.saveSuccess,.sendSuccess,.draftSuccess,.msgContact,.msgUpdateIdent,.sendFail{
+    background-color:#87fd87;
+}
+.msgContact{
+    background-color:#ff5353;
+}
+
+.saveError{
+    background-color:#ff3f3f;
+}
+
+.contentContacts .ContGroup,.contentContacts .ContContact,.contentContacts .ContInfo{
+    border-left: 1px solid #4362bd;
+    border-right: 1px solid #4362bd;
+    border-bottom: 1px solid #4362bd;
+}
+.contentContacts .label{
+    color:#4362bd;
+    border-bottom:1px solid #4362bd;
+    border-bottom:0px solid #4362bd\9;
+    border-top:1px solid #4362bd; 
+    background-color:#c1cbda;
+}
+.backContact,.backGroup{
+    background-color:#2647a6!important;
+    color:white !important;
+}
+.menuContact{ 
+    border: 1px solid #4362bd;
+    background-color:#c1cbda;
+}
+.menuContact div{
+    border-right: 1px solid #4362bd;
+}
+.backContactCheck{
+    background-color:#EDECEB;
+    color:#5a8cff;
+}
+.left ul,.left{
+    background-color:#c1cbda;
+}
+.moveMouseFolder{
+    background-color:#becceb !important;
+}
+.menuDrop li a,.menuDrop li a{
+    color:black;
+}
+.menuDrop li a:hover{
+    background-color:#4e71d4;
+    color:white;
+}
+
+#autoCompl{
+    background-color:#7b9dff;
+}
+.selCont{
+    background-color:white !important;
+    color:black;
+}
+.row span{
+    color:39F;
+}
+.divRadioCompose{
+    background-color:#d8d8d8;
+    color:#4362bd;
+}
+#tableListGroups ul li{ 
+    color:black;
+}
+.groupOdd{
+    background-color: #e2e4ff;
+}
+#tableListContacts_filter{
+    position:relative;
+    top:-24px;
+}
+.selFolder{
+    background-color: white !important;
+}
+#uploadSucess{
+    color:green;
+}
+.MenuReadWin,.titleAttachRead,.titleMenuFolder{
+    background-color:#7b9dff; 
+}
+.ui-dialog-titlebar{
+    background:url(../../images/blue/titleback_blue.png) !important;
+}
+.tdPar,.lineAttach,.lineMenuFolder{
+    background-color:#c1cbda;
+}
+.tdInpar{
+    background-color:white;
+}
+.notice-body {
+    background: url(../../images/blue/purrTopBlue.png) no-repeat left top !important;
+}
+.notice-bottom {
+    background: url(../../images/blue/purrBottomBlue.png) no-repeat left top !important;
+}
+#barquota{      
+   border:1px solid black;
+}
+a{
+   color:black !important;
+}
+.ui-datepicker-header{
+    background: url(../../images/blue/titleback_blue.png)) !important;
+}
+

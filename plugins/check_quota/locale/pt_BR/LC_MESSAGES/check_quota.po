@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: abook_group\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-09 11:46-0400\n"
+"PO-Revision-Date: 2004-04-07 10:50-0300\n"
+"Last-Translator: Bruno Borges <bruno.borges@brc.com.br>\n"
+"Language-Team: NONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "\"Check Quota\" Troubleshooting"
+msgstr ""
+
+msgid "This page can aid you in troubleshooting the \"Check Quota\" plugin."
+msgstr ""
+
+msgid "Quota Binary Output:"
+msgstr ""
+
+msgid "Warning:"
+msgstr "Atenção:"
+
+msgid "Quota binary did not give any output. Quotas may not be enabled."
+msgstr ""
+
+msgid ""
+"You do not have quotas enabled for your username, you will not see any "
+"informative graphs."
+msgstr "Você não tem quota habilitada para seu usuário, você não verá nenhum gráfico de informação"
+
+msgid "IMAP Command Sent:"
+msgstr ""
+
+msgid "IMAP Response Received:"
+msgstr ""
+
+msgid ""
+"Your IMAP server does not have IMAP4 QUOTA extension. Quotas not enabled."
+msgstr ""
+
+msgid ""
+"Your username is not in user@domain format. cPanel quotas only work with "
+"that type of usernames for now."
+msgstr ""
+
+msgid "Reseller information for your domain cannot be obtained."
+msgstr ""
+
+msgid "Quota File:"
+msgstr "Quota de arquivo:"
+
+msgid "Quota file for your domain does not exist or not readable."
+msgstr "Arquivo de Quota do seu arquivo nÃo existe ou nÃo pode ser lido."
+
+msgid "Your cPanel Quota:"
+msgstr "Sua Quota do cPanel:"
+
+msgid "Mail Files Location:"
+msgstr "Localização dos arquivos de email"
+
+msgid "&quot;du&quot; Binary Output:"
+msgstr ""
+
+msgid ""
+"&quot;du&quot; binary did not give any output. There may be some problem "
+"with that binary."
+msgstr ""
+
+msgid "Quota Usage:"
+msgstr "Uso da quota:"
+
+msgid "File Usage:"
+msgstr "Uso de arquivo:"
+
+msgid "OVER QUOTA!"
+msgstr "Você excedeu a Quota!"
+
+msgid "WARNING:"
+msgstr "Atenção:"
+
+#, c-format
+msgid "Your quota usage is currently <b>%s%%</b>."
+msgstr "Sua quota de arquivo atualmente Ã <b>%s%%</b>."
+
+#, c-format
+msgid "Your quota usage is currently %s%%."
+msgstr "Sua quota usado é atualmente %s%%."
+
+msgid ""
+"To avoid losing any email, you should immediately empty out your \"Trash\" "
+"and \"Sent\" folders and delete emails with large attachments."
+msgstr ""
+
+msgid ""
+"To avoid losing any email, you should immediately empty out your &quot;"
+"Trash&quot; and &quot;Sent&quot; folders and delete emails with large "
+"attachments."
+msgstr ""
+
+msgid ""
+"You may want to make sure you empty out your \"Trash\" and clean your \"Sent"
+"\" folder."
+msgstr "Você pode querer ter a certeza que esvaziam a sua Lixeiara e limpar sua pasta de itens enviados"
+
+msgid ""
+"You may want to make sure you empty out your &quot;Trash&quot; and clean "
+"your &quot;Sent&quot; folder."
+msgstr ""
+
+msgid "%1 of %2"
+msgstr ""
+
+msgid "%1% of %2"
+msgstr ""
+
+msgid "Mandatory Settings"
+msgstr ""
+
+msgid "Quota Type:"
+msgstr "Tipo de quota"
+
+msgid "INVALID!"
+msgstr "Inválido!"
+
+msgid "Please read config.php file for possible values."
+msgstr ""
+
+msgid "Check UNIX Quotas:"
+msgstr "Checar Quotas UNIX:"
+
+msgid "On local server"
+msgstr "No servidor local"
+
+msgid "On remote server"
+msgstr "No servidor remoto"
+
+msgid "Remote Username:"
+msgstr "Usuário remoto"
+
+msgid "Please read INSTALL for details on setting this variable."
+msgstr ""
+
+msgid "Remote Server:"
+msgstr "Servidor remoto:"
+
+msgid "SUDO Binary:"
+msgstr ""
+
+msgid "file does not exist or not executable."
+msgstr "arquivo não existe ou não é executável."
+
+msgid "INFO:"
+msgstr ""
+
+msgid "Remote checking is enabled, cannot check validity of this variable."
+msgstr ""
+
+msgid "SSH Binary:"
+msgstr ""
+
+msgid "QUOTA Binary:"
+msgstr ""
+
+msgid "DU Binary:"
+msgstr ""
+
+msgid "cPanel Root Folder:"
+msgstr ""
+
+msgid "directory does not exist or not readable."
+msgstr ""
+
+msgid "Use Separate IMAP Connection:"
+msgstr ""
+
+msgid "No"
+msgstr "Não"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "Display Settings"
+msgstr ""
+
+msgid "Graph Type:"
+msgstr "Tipo de gráfico"
+
+msgid "Standard HTML tables"
+msgstr "Tabela padrão de HTML"
+
+msgid "GD images"
+msgstr "Imagens GD"
+
+msgid "Your server does not have GD support."
+msgstr "Seu servidor não tem suporte ao GD."
+
+msgid "Graph type will revert to standard HTML tables."
+msgstr ""
+
+msgid "Graph Location:"
+msgstr "Localização dos gráficos"
+
+msgid "Below folders list"
+msgstr ""
+
+msgid "Above folders list"
+msgstr "Sobre a lista de pastas"
+
+msgid "Font Size:"
+msgstr "Largura da fonte:"
+
+msgid "Graph Alignment:"
+msgstr "Alinhamento do gráfico"
+
+msgid "Left"
+msgstr "Esquerda"
+
+msgid "Right"
+msgstr "Direita"
+
+msgid "Center"
+msgstr "Centralizado"
+
+msgid "Use Horizontal Rules:"
+msgstr "Usar regras horizontais"
+
+msgid "Show Intro Texts:"
+msgstr "Mostrar textos de introdução"
+
+msgid "Quota Details Location:"
+msgstr "Localização de detalhes de quota"
+
+msgid "Below quota graph"
+msgstr "Abaixo gráfico de quota"
+
+msgid "Above quota graph"
+msgstr ""
+
+msgid "Show Quantity or Percent:"
+msgstr "Mostrar quantidade ou porcentagem"
+
+msgid "Show percent"
+msgstr "Mostrar porcentagem"
+
+msgid "Show quantity (size or count)"
+msgstr "Mostrar quantidade (largura ou contagem)"
+
+msgid "Yellow Alert Threshold:"
+msgstr "Alerta amarelo de limite"
+
+#, c-format
+msgid "%s%%"
+msgstr "%s%%"
+
+msgid "Red Alert Threshold:"
+msgstr "Alerta vermelho de limite"
+
+msgid "Show Yellow Alert Warning:"
+msgstr "Mostrar aviso de alerta amarelo"
+
+msgid "Show Red Alert Warning:"
+msgstr "Mostrar aviso de alerta vermelho:"
+
+msgid "KB/MB Conversion:"
+msgstr "KB/MB conversão"
+
+msgid "Show Filesystems:"
+msgstr "Mostrar sistemas de arquivos"
+
+msgid "Override Settings"
+msgstr "Sobrescrever alterações"
+
+msgid "Filesystem Aliases:"
+msgstr "Apelidos de sistema de arquivo"
+
+msgid "No aliases set"
+msgstr "Não apelidar"
+
+msgid "will be shown as"
+msgstr "será mostrado como"
+
+msgid "Excluded Filesystems:"
+msgstr "Sistemas de arquivos distribuídos"
+
+msgid "All filesystems with quota enabled will be shown."
+msgstr "Todos sistemas de arquivo com quota habilitados serão mostrados"
+
+msgid "will be excluded from quota information."
+msgstr "Serão excluídas as informações de quota de"
+
+msgid "Override IMAP Size Quota:"
+msgstr ""
+
+msgid "No override set"
+msgstr "Não sobrescrever"
+
+msgid "Override IMAP Count Quota:"
+msgstr "Sobrescrever contagem da quota IMAP"
+
+msgid "Files"
+msgstr "Arquivos"
+
+msgid "Always Refresh cPanel:"
+msgstr ""
+
+msgid "Quota Output"
+msgstr "Saída de quota"
+
+msgid "You have"
+msgstr "Você tem"
+
+msgid "error or warning"
+msgstr "Erro ou alerta"
+
+msgid "errors or warnings"
+msgstr "Erros ou alertas"
+
+msgid "in your configuration. You can find the details below."
+msgstr "na sua configuração. Você pode encontrar os detalhes abaixo."
+
+msgid "Please correct"
+msgstr "Por favor corrija"
+
+msgid "this error or warning"
+msgstr ""
+
+msgid "these errors or warnings"
+msgstr ""
+
+msgid "in order to have &quot;Check Quota&quot; work properly."
+msgstr ""
+
+msgid ""
+"Your configuration seems to be correct. &quot;Check Quota&quot; should work "
+"properly."
+msgstr ""

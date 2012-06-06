@@ -1,0 +1,6 @@
+/* Pretty search replacer */
+
+  .j-searcher .j-searcher_input { top: 4px; }
+  .j-searcher .j-searcher_right { width: expression(parentNode.offsetWidth + "px"); }
+
+/* Pretty search replacer (end) */

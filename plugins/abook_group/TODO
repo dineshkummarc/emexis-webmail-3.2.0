@@ -1,0 +1,6 @@
+* LDAP support.
+* Use backend numbers to identify address books.
+* Mixed backend setup support.
+* Add error handling in flatfile backend.
+* Make flatfile work with two address book backends.
+* Add links to address book groups in addressbook_bottom hook (#1154226).

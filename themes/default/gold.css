@@ -1,0 +1,305 @@
+@import url("left.css");
+@import url("webmail.css");
+@import url("calendar.css");
+
+.barcontrol>div{
+    border:1pt solid #eebc00;
+    background-color:white;
+}
+.right{
+    background-color:white;
+}
+.listmailHorizontal{
+    border:1pt solid #eebc00;
+}
+.readHorizontal{
+    border:1pt solid #eebc00;
+}
+#divisorVertical{
+    border-right:1px solid #eebc00;
+}
+#divisorVertical,#divisorLeft{
+    border-left:1px solid #eebc00;
+}
+.loader .text{
+    color:blue;
+    font-size:8pt;
+    font-weight:bold;
+}
+.highlight{
+    background-color:#ffda4f !important;
+    color:black;
+}
+.contextMenu {
+    border: solid 1px #CCC;
+    background: #fff0bd;
+}
+.contextMenu LI.hover A {
+    color: #FFF;
+    background-color: #eebc00;
+}
+ LI.disabled A {
+    color: #AAA;
+}
+.contextMenu LI.separator {
+    border-top: solid 1px #CCC;
+}
+.dragMSg,.dropOver{
+    background-color: #becceb;
+}
+.dropMSg{
+    background-color: white;
+}
+.headerMsgVer{
+    background-color:silver !important;
+    background-color:silver;    
+    border-bottom:1px solid #eebc00;
+    color:white;
+}
+.tableHeader{
+    background-color:#ffda4f !important;   
+}
+.tableHeader{
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;    
+}
+.headerMsg{ 
+    background-color:silver !important;
+}
+.headerMsg div{
+    background-color:silver !important;
+    color:white;
+}
+.gridmail,.gridmail td {
+    border-bottom-color:white !important;
+    border-top-color:white !important;
+}
+#labelBox{
+    /*font-weight:bold;*/
+    color:white;
+    /*font-size:14pt;*/
+    background-color:#ffda4f;
+    border-top:1px solid #eebc00;
+    border-bottom:1px solid #eebc00;
+}
+
+.labelFolder,.labelQuota{
+    border:1px solid #eebc00;
+    background-color:#ffda4f;
+    color:black;
+}
+.labelFolder{
+    border-right:0px !important;
+}
+
+.subjectMsg{
+    border-bottom:1px solid #ffda4f;
+    border-right:1px solid #ffda4f;
+    background-color:#fff0bd !important;
+    color:black;
+}
+.formatHeader div:first{
+    background-color:silver;
+    color:white;    
+}
+.readMailBack{
+    background-color:#eebc00 !important;
+    color:white !important
+}
+.readMailBack a:hover,.readMailBack a:visited,.readMailBack a{
+    background-color:transparent;
+    color:white !important
+}
+.ui-dialog-buttonset button{
+    font-size:10pt !important;  
+}
+.ui-dialog-buttonset button{
+    font-size:10pt !important;
+    background-color:silver;    
+}
+.labelFolder,.labelQuota,.labelListAgenda{
+    border:1px solid #eebc00;
+    background-color:#ffda4f;
+    color:black;
+}
+.subjectMsg{
+    border-bottom:1px solid #ffda4f;
+    border-right:1px solid #ffda4f;
+    background-color:#fff0bd !important;
+    color:black;
+}
+#closeall{
+    border:white solid 1px;
+    background-color:#6a6a6a;
+    color:white;
+}
+.minicompose,.miniread,.minioptions,.minifolder,.minicontacts,.minipic{
+    border:1px groove #eebc00;   
+}
+
+.labelNumMSg,.labelNumCont{
+    background-color:#eebc00;    
+    color:white;
+}
+.compose input[type=text]{
+    border:1px solid #ffda4f !important;
+}
+.compose td .to,.compose td .cc,.compose td .bcc,.compose td .subject,.attachLabel{
+    color:#eebc00;
+    font-weight:bold;
+}
+.ShowHideCC,.ShowHideBCC,.divCCBCC{
+    color:#5a8cff;
+}
+.tableHeader thead th{
+    color:black;
+    border-top:1px solid #eebc00;
+}
+.header .background {    
+    background:url('../../images/gold/backtop_gold.png') no-repeat;
+}
+.header td{
+    border-top:1px solid #eebc00;
+    border-bottom:1px solid #eebc00;
+}
+.header td:fist{
+    border-left:1px solid silver;
+}
+.backTopCompose{
+    background:url("../../images/backtopcompose.png") no-repeat;
+}
+#inputAttach{        
+    background: url(../../images/backgroundattach.png);
+}
+.flagMsgUnread{
+    background: url(../../images/email.png);
+}
+#numPage{
+    background-color: #eebc00;
+}
+.btnDeleteAttach{
+    color:#90abb8 !important;
+}
+#inputAttach input[type=file]{
+    border: 1px solid #b0b0b0;
+    background: #ecedf1;
+    color: #585858;
+}
+.btnUpload,.btnDialogEvent,.btnIden,#inputAttach input,.btnSaveOption,.btnCancelOption,.ContInfo .btnContact, .ContInfo input[type=button], #actionToField{
+    background-color:white;    
+    color:black; 
+    border:1px solid black;
+}
+.hideBcc{
+    color:#eebc00;
+}
+#search input[type=text]{
+    color:silver;       
+    background-color:transparent;
+}
+
+#optionSearch,.menuDrop{
+    border:1px solid #eebc00;
+    color:#eebc00;
+    background-color:#fff0bd;
+}
+#contentOptions input,textarea{
+    background-color: #fff0bd;
+}
+.saveSuccess,.sendSuccess,.draftSuccess,.msgContact,.msgUpdateIdent,.sendFail{
+    background-color:#87fd87;
+}
+.msgContact{
+    background-color:#ff5353;
+}
+.saveError{
+    background-color:#ff3f3f;
+}
+.contentContacts .ContGroup,.contentContacts .ContContact,.contentContacts .ContInfo{
+    border-left: 1px solid #eebc00;
+    border-right: 1px solid #eebc00;
+    border-bottom: 1px solid #eebc00;
+}
+.contentContacts .label{
+    color:#eebc00;
+    border-bottom:1px solid #eebc00;
+    border-bottom:0px solid #eebc00\9;
+    border-top:1px solid #eebc00; 
+    background-color:#fff0bd;
+}
+.backContact,.backGroup{
+    background-color:#eebc00 !important;
+    color:white !important;
+} 
+.menuContact{ 
+    border: 1px solid #eebc00;
+    background-color:#fff0bd;
+}
+.menuContact div{
+    border-right: 1px solid #eebc00;
+}
+.backContactCheck{
+    background-color:#EDECEB;
+    color:#5a8cff;
+}
+.left ul,.left{
+    background-color:#fff0bd;
+}
+.moveMouseFolder{
+    background-color:#becceb !important;
+}
+.menuDrop li a:hover{
+    background-color:#eebc00;
+    color:white;
+}
+#autoCompl{
+    background-color:#ffda4f;
+}
+.selCont{
+    background-color:white !important;
+    color:black;
+}
+.divRadioCompose{
+    background-color:#d8d8d8;
+    color:#eebc00;
+}
+.groupOdd{
+    background-color: #e2e4ff;
+}
+.selFolder{
+    background-color: #ffda4f !important; 
+}
+.MenuReadWin,.titleAttachRead,.titleMenuFolder{
+    background-color:#ffda4f; 
+}
+
+.ui-dialog-titlebar,.ui-datepicker-header{
+    background:url(../../images/gold/titleback_gold.png) !important;
+}
+.tdPar,.lineAttach,.lineMenuFolder{
+    background-color:#fff0bd;
+}
+.notice-body {
+    background: url(../../images/gold/purrTopGold.png) no-repeat left top !important;
+}
+.notice-bottom {
+    background: url(../../images/gold/purrBottomGold.png) no-repeat left top !important;
+}
+
+ul.tabs li,ul.tabsContactsDialog li{
+    background: #fff0bd;
+}
+
+ul.tabs li a:hover, ul.tabsContactsDialog li a:hover {
+    background: #ffda4f;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabsContactsDialog li.active, html ul.tabsContactsDialog li.active a:hover{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+.ui-datepicker-header{
+    background:url() !important;
+    background-color:#FFDA4F !important;
+}
+

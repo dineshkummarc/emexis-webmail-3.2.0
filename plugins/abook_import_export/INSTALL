@@ -1,0 +1,41 @@
+Installing Plugin
+=================
+
+1) Start with untaring the file into the plugins directory.
+Here is a example for the 0.9 version of the abook_import_export
+plugin.
+
+    $ cd /var/www/squirrelmail/plugins
+    $ tar -xzvf /home/archives/abook_import_export-0.9-1.4.0.tar.gz
+
+2) Then go to your config directory and run conf.pl.  Choose
+option 8 and move the plugin from the "Available Plugins"
+category to the "Installed Plugins" category.  Save and exit.
+
+    $ cd ../config/
+    $ ./conf.pl
+
+3) Log into SquirrelMail, go to 'Addresses' and find forms for 
+importing and exporting your address book at the bottom of the page.
+
+Plugin requires SquirrelMail 1.4.4 or later. 1.5.0 version is not 
+supported. Address book import works only when file_uploads setting 
+is enabled in PHP and SquirrelMail attachment directory is writable.
+Use of PHP with gettext support is recommended, if plugin is used 
+in SquirrelMail 1.4.x.
+
+Some plugin settings can be adjusted by creating 
+config/abook_import_export_config.php or 
+plugins/abook_import_export/config.php configuration file.
+See plugins/abook_import_export/config_default.php.
+
+If both configuration files are present, plugin uses the one in 
+config/ directory. If configuration files are not present, plugin
+uses default configuration. 
+
+Plugin translations use abook_import_export domain. 
+abook_import_export.po and abook_import_export.mo files should be 
+stored in same directory that stores squirrelmail.po and 
+squirrelmail.mo files. Translations are maintained by SquirrelMail 
+Internationalization Team and are distributed in SquirrelMail locale 
+packages.

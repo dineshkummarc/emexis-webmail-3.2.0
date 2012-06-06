@@ -1,0 +1,243 @@
+# Indonnesian translation of SquirrelMail's
+# abook_group plugin
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Rachim <tamsjadi@icqmail.com>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: abook_group\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-09 11:46-0400\n"
+"PO-Revision-Date: 2003-12-11 20:18:19 -0800\n"
+"Last-Translator: Rachim Tamsjadi <tamsjadi@icqmail.com>\n"
+"Language-Team: Indonnesian <squirrelmail-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addrbook_search.php:323 addrbook_search.php:340
+msgid "Add"
+msgstr "Tambahkan"
+
+#: abook_group_functions.php:91
+msgid "Add New Members"
+msgstr "Tambahkan member baru"
+
+#: addrbook_search.php:192 addrbook_search.php:220
+msgid "Add Successful"
+msgstr "Penambahan berhasil"
+
+#: addrbook_search.php:310
+msgid "Add to Existing Group: "
+msgstr "Tambahkan pada kelompok yang ada"
+
+#: addrbook_search.php:336
+msgid "Add to New Group (supply group name):"
+msgstr "Tambahkan pada kelompok baru (Cantumkan nama kelompok):"
+
+#: setup.php:41
+msgid "Address Groups"
+msgstr "Kelompok Alamat"
+
+#: abook_group_PEAR_database.php:217 abook_group_PEAR_database.php:317
+#: abook_group_PEAR_database.php:385 abook_group_PEAR_database.php:453
+msgid "Addressbook is read-only"
+msgstr "Buku Alamat dalam keadaan read-only"
+
+#: addrbook_search.php:153
+msgid "All address books"
+msgstr "Seluruh buku alamat"
+
+#: abook_group_PEAR_database.php:487
+#, php-format
+msgid "Another group %s already exists"
+msgstr "Kelompok lain %s sudah ada"
+
+#: modifyGroup.php:75
+msgid "Are you sure you want to delete "
+msgstr "Anda yakin ingin meghapus"
+
+#: abook_group_interface.php:175
+msgid "Close"
+msgstr ""
+
+#: addrbook_search.php:171
+msgid "Close window"
+msgstr "Tutup jendela"
+
+#: abook_group_PEAR_database.php:109 abook_group_PEAR_database.php:141
+#: abook_group_PEAR_database.php:190 abook_group_PEAR_database.php:301
+#: abook_group_PEAR_database.php:373 abook_group_PEAR_database.php:423
+#: abook_group_PEAR_database.php:506
+#, php-format
+msgid "Database error: %s"
+msgstr "Database error: %s"
+
+#: list_abook_group.php:75
+msgid "Delete"
+msgstr "Hapus"
+
+#: modifyGroup.php:71
+msgid "Delete Group"
+msgstr "Hapus kelompok"
+
+#: abook_group_interface.php:66 addrbook_search.php:39
+msgid "E-mail"
+msgstr "Alamat E-mail"
+
+#: abook_group_PEAR_database.php:59 abook_group_PEAR_database.php:175
+#: abook_group_PEAR_database.php:248 abook_group_PEAR_database.php:259
+#: abook_group_PEAR_database.php:329 abook_group_PEAR_database.php:338
+msgid "Global address book"
+msgstr "Buku Alamat Global"
+
+#: abook_group_PEAR_database.php:238
+#, php-format
+msgid "Group %s already exists"
+msgstr "Kelompok %s sudah ada"
+
+#: abook_group_PEAR_database.php:404 abook_group_PEAR_database.php:472
+#, php-format
+msgid "Group %s does not exist"
+msgstr "Kelompok %s belum ada"
+
+#: abook_group_PEAR_database.php:436
+msgid "Group name is unchanged."
+msgstr "Nama kelompok tidak dirubah"
+
+#: abook_group_PEAR_database.php:444
+msgid "Group name was empty."
+msgstr "Nama kelompok kosong"
+
+#: abook_group_interface.php:140 list_abook_group.php:52 setup.php:65
+msgid "Groups"
+msgstr "Kelompok"
+
+#: abook_group_interface.php:67 addrbook_search.php:40
+msgid "Info"
+msgstr "Informasi"
+
+#: list_abook_group.php:76
+msgid "List"
+msgstr "Tampilkan"
+
+#: abook_group_functions.php:91
+msgid "List All Groups"
+msgstr "Tampilkan semua kelompok"
+
+#: addrbook_search.php:168
+msgid "List all"
+msgstr "Tampilkan semua"
+
+#: listMembers.php:90
+msgid "Members"
+msgstr "Member"
+
+#: list_abook_group.php:74 modifyGroup.php:162
+msgid "Modify"
+msgstr "Ubah"
+
+#: modifyGroup.php:119
+msgid "Modify Group Name"
+msgstr "Ubah nama kelompok"
+
+#: abook_group_interface.php:65 addrbook_search.php:38
+msgid "Name"
+msgstr "Nama"
+
+#: modifyGroup.php:147
+msgid "New Group Name"
+msgstr "Nama kelompok baru"
+
+#: addrbook_search.php:201
+msgid "New Group Name is Empty"
+msgstr "Nama kelompok baru kosong"
+
+#: modifyGroup.php:80
+msgid "No"
+msgstr "Tidak"
+
+#: addrbook_search.php:261 addrbook_search.php:290
+msgid "No persons matching your search was found"
+msgstr "Nama yang dicari tidak ditemukan"
+
+#: addrbook_search.php:327
+msgid "OR"
+msgstr "ATAU"
+
+#: modifyGroup.php:135
+msgid "Old Group Name"
+msgstr "Nama kelompok lama"
+
+#: listMembers.php:137
+msgid "Remove"
+msgstr "Hapus"
+
+#: listMembers.php:68
+msgid "Remove Successful"
+msgstr "Penghapusan sukses"
+
+#: addrbook_search.php:167
+msgid "Search"
+msgstr "Cari"
+
+#: addrbook_search.php:142
+#, fuzzy
+msgid "Search for name to add"
+msgstr "Cari alamat untuk ditambah"
+
+#: abook_group_interface.php:74 addrbook_search.php:43
+msgid "Source"
+msgstr "Sumber"
+
+#: abook_group_interface.php:171
+msgid "There are no groups available for selection"
+msgstr "Tidak ada kelompok tersedia untuk dipilih"
+
+#: addrbook_search.php:36
+msgid "Toggle All"
+msgstr "Pilih semua"
+
+#: addrbook_search.php:244
+#, php-format
+msgid "Unable to list addresses from %s"
+msgstr "Gagal menampilkan alamat dari %s"
+
+#: abook_group_interface.php:105
+msgid "Use Addresses"
+msgstr "Gunakan alamat"
+
+#: abook_group_PEAR_database.php:280
+msgid "User Already Exists in The Group"
+msgstr "Nama sudah tercatat dalam daftar"
+
+#: abook_group_PEAR_database.php:352
+msgid "User Does Not Exist in The Group"
+msgstr "Nama belum tercatat dalam daftar kelompok"
+
+#: modifyGroup.php:79
+msgid "Yes"
+msgstr "Iya"
+
+#: list_abook_group.php:91
+msgid "You Currently Do Not Have Any Groups"
+msgstr "Pada saat ini Anda belum memiliki kelompok"
+
+#: listMembers.php:125
+msgid "You Currently Do Not Have Any Members In This Group"
+msgstr "Dalam kelompok ini belum ada nama yang tercatat"
+
+#: setup.php:43
+msgid ""
+"You can create address groups and add email addresses from your address book"
+msgstr ""
+"Anda diperbolehkan untuk membentuk kelompok alamat dan menambahkan alamat E-"
+"Mail dari buku alamat Anda"
+
+#: addrbook_search.php:279
+msgid "Your search failed with the following error(s)"
+msgstr "Pencarian Anda gagal dengan alasan berikut ini"
+
+#: addrbook_search.php:152
+msgid "in"
+msgstr "dalam"

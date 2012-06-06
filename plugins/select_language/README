@@ -1,0 +1,48 @@
+GENERAL USE
+===========
+Plugin allows to select language used in SquirrelMail before logging into 
+SquirrelMail.
+
+Changelog
+=========
+2005-12-04
+ * Released 1.1 version.
+
+2005-11-29
+ * Removed $available_languages support.
+
+2005-11-04
+ * Fixed issues with custom_charset plugin.
+
+2005-10-31 (1.0 release)
+ * Released 1.0 version on SquirrelMail site.
+
+2005-08-21
+ * Added login_form patches and functions to handle 1.5.1 login form.
+
+2005-07-28 (1.0rc1 release)
+ * Released rc1 version on SM-Plugins site
+
+2005-07-27
+ * Implemented use of 1.5.1cvs $languages ALTNAME key.
+ * Implemented preferred language detection.
+ * Plugin checks $available_languages (1.5.1cvs only) and limit_languages 
+   plugin limits.
+ * Added integration with custom_charset plugin.
+ * Fixed table colors.
+
+2005-07-26
+ * Added plugin to cvs. Submitted it to squirrelmail-plugins list for review.
+
+
+API
+===
+Plugin uses login_form and login_verified hooks. It does not add any option 
+blocks to option pages.
+
+Bugs & new features
+===================
+Plugin is maintained in SourceForge SM-Plugins project site.
+Use tracker on http://sourceforge.net/projects/sm-plugins/ to report
+plugin bugs or suggest new features.
+

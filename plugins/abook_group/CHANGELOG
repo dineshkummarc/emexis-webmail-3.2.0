@@ -1,0 +1,151 @@
+************
+* v.0.51.1 *
+************
+- Fixed invalid test in agroup_check_backends() function. Added option to
+  disable use of sqsession_register() in compose (#1599880).
+- Added 'To', 'Cc' and 'Bcc' string translations.
+- Reduced gettext domain switching.
+- Fixed error handling in empty groups.
+- Escaped quotes and slashes in email addresses (#1642857).
+
+**********
+* v.0.51 *
+**********
+- fixed warnings in flatfile functions
+- added functions that block use of plugin in mixed address book environment.
+  (I don't have plans to fix it until code rewrite in 0.60).
+- $javascript_on variable is used instead of soupNazi().
+
+*************
+* v.0.51rc1 *
+*************
+- Added Italian translation by Roberto Piola <roberto at ilpiola.it>.
+- Converted Russian translation from KOI to UTF-8.
+- Cleaned unused translation directories in po. Removed message.mo files.
+- Added COPYING file and cleaned README.
+- added phpdoc blocks and copyrights.
+- fixed corruption of some variables with recent sqgetGlobalVar() function.
+- disabled use of remote backends.
+- removed some unneeded gettext domain switches.
+- Use function arguments to submit addresses. (sm-bugtracker #1048059, #957157)
+  Fix by Randy Berdan (randum6 at users.sourceforge.net)
+
+*********
+* v0.50 *
+*********
+2004-07-22 Jon Nelson ceases to be the maintainer due to work/class
+           load.  The plugin is now stored at 
+           http://www.sf.net/projects/sm-plugins
+
+2004-06-09 Added Brazilian Portuguese translation with help from 
+           Fabio Marcos Pedroso Filho <fabio@unixworks.com.br>
+
+2004-05-11 Applied name patch to reflect Bryan Loniewski 
+           <brylon@jla.rutgers.edu> comments:
+
+           "Just a small patch for the text displayed next to the
+           search box, since the search is not performed on 'address'
+           but on 'name'."
+
+2004-04-25 Modified by Jason Naughton (jnaughto@ee.ryerson.ca)
+           Essentially cleaned up a few files junk files left
+           around.  Changed the agroup_database.php file so that
+           based on the $addrbook_dsn variable set by the config.php 
+           (ie configure) was set to "" we were then using flat file
+           format.  If it was set to anything else then we're back
+           to using databases...
+
+2004-04-25 Modified by Jason Naughton (jnaughto@ee.ryerson.ca)
+           Noticed there wasn't a close button available after you
+           clicked on the groups button and pulled up the groups window
+           so I simply added it.
+
+2004-04-25 Modified by Jason Naughton (jnaughto@ee.ryerson.ca)
+	   Opps missed a check.
+
+2004-04-25 Modified by Jason Naughton (jnaguhto@ee.ryerson.ca)
+           Added Flat file support.
+
+2004-03-05 Added Czech translation with help from Ondra 'Kepi' Kudl√≠k 
+           <kepi@cacwa.cz>
+
+***********
+* v.0.39c *
+***********
+2004-02-25 Added Norwegian Nynorsk translation with help from
+           Ola Ketil Siqveland <olaketil@hotmail.com>
+
+           Made some changes in Dutch translation with help from
+           Official SquirrelMail nl_NL translator (M.J. Prinsen
+           <translation@prinsenonline.com>).
+
+***********
+* v.0.39b *
+***********
+2004-02-01 Removed Ukrainian since it was ru_UA.
+
+***********
+* v.0.39a *
+***********
+2004-01-30 Added Russian and Ukrainian with help from Andriy.
+
+**********
+* v.0.39 *
+**********
+2003-11-22 Added confirmation when deleting a group.
+
+**********
+* v.0.38 *
+**********
+           Added Dutch translation with help from Ronald.
+**********
+* v.0.35 *
+**********
+2003-11-17 Fixed problems listing existing groups.  Please see 
+           UPGRADING to incorporate this fix.  This was done with
+           tremedous help and understanding from Tomas Kuliavas.
+
+           Lithuanian was also added with help from Tomas.
+
+           German was added with a lot of help from 
+           Thommie <t.rother@netzwissen.de>.
+
+           Got rid of window$ carriage returns in some files.
+
+           Fixed the way "Modify" reponds if you don't change the
+           group name.
+
+**********
+* v.0.32 *
+**********
+2003-10-27 Added il8n support and the Spanish translation with 
+           tremendous help from Rodolfo.
+
+           French translation added with alot of help from CÈdric.
+      
+           This should also take of the problem of not being able
+           to see the members of a newly created group.
+
+           It should also take care of the error:
+           Fatal error: Call to undefined function: fetchrow() in...
+
+**********
+* v.0.21 *
+**********
+2003-07-02 Added sqgetGlobalVar lines to make plugin work with
+           register_globals = Off.
+
+
+**********
+* v.0.20 *
+**********
+2003-06-25 Jon Nelson takes over as maintainer.
+
+2003-05-30 Modified by Jon Nelson (quincy@linuxnotes.net) to be 
+           compatiable with SquirrelMail 1.4.
+
+*********
+* v.0.1 *
+*********
+2002-07-01 Initial version by Kelvin Ho.
+

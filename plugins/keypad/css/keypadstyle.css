@@ -1,0 +1,11 @@
+#keypad-div *{ background: #333;}
+.keypad-key { width: 22px; background: transparent;
+    color: #fff; border: 1px outset #fff; font-weight: bold; }
+.keypad-key-down { border: 1px inset #fff; }
+.keypad-shift, .keypad-back,
+.keypad-clear, .keypad-close { width: 48px; }
+.keypad-spacebar { width: 152px; }
+.keypad-space { width: 22px; }
+.keypad-half-space { width: 11px; }
+.keypad-close,.keypad-clear,.keypad-back,.keypad-shift{font-size:10px !important; }
+

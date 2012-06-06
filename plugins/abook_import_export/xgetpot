@@ -1,0 +1,17 @@
+#!/bin/sh
+# Script extracts gettext strings from plugin files
+# Copyright (c) 1999-2006 The SquirrelMail Project Team
+# Licensed under the GNU GPL. For full terms see the file COPYING.
+# $Id: xgetpot,v 1.3 2006/03/20 17:39:58 tokul Exp $
+XGETTEXT_OPTIONS="--keyword=_ -keyword=N_ --default-domain=abook_import_export --add-comments"
+
+# Allows controlling language option
+# (gettext v.0.10.40 = -C, gettext 0.11+ = -L php).
+if [ $SM_LANG_PHP ] ; then
+ XGETTEXT_OPTIONS="${XGETTEXT_OPTIONS} -L php";
+else
+ XGETTEXT_OPTIONS="${XGETTEXT_OPTIONS} -C";
+fi
+
+xgettext ${XGETTEXT_OPTIONS} \
+    *.php --output=abook_import_export.pot

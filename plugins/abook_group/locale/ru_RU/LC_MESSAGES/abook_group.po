@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: abook_group v039\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-09 11:46-0400\n"
+"PO-Revision-Date: 2004-01-30 21:17-0500\n"
+"Last-Translator: Andriy M. Shevchuk <morbid@angel.org.ua>\n"
+"Language-Team: Ukraine <morbid@angel.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addrbook_search.php:323 addrbook_search.php:340
+msgid "Add"
+msgstr "Добавить"
+
+#: abook_group_functions.php:91
+msgid "Add New Members"
+msgstr "Добавить нового адресата"
+
+#: addrbook_search.php:192 addrbook_search.php:220
+msgid "Add Successful"
+msgstr "Добавлено"
+
+#: addrbook_search.php:310
+msgid "Add to Existing Group: "
+msgstr "Добавить в существующую группу"
+
+#: addrbook_search.php:336
+msgid "Add to New Group (supply group name):"
+msgstr "Добавить в новую группу (указать имя группы)"
+
+#: setup.php:41
+msgid "Address Groups"
+msgstr "Групповые адреса"
+
+#: abook_group_PEAR_database.php:217 abook_group_PEAR_database.php:317
+#: abook_group_PEAR_database.php:385 abook_group_PEAR_database.php:453
+msgid "Addressbook is read-only"
+msgstr "Адресная книга только для чтения"
+
+#: addrbook_search.php:153
+msgid "All address books"
+msgstr "Вся адресная книга"
+
+#: abook_group_PEAR_database.php:487
+#, php-format
+msgid "Another group %s already exists"
+msgstr "Группа %s существует"
+
+#: modifyGroup.php:75
+msgid "Are you sure you want to delete "
+msgstr "Вы действительно хотите удалить "
+
+#: abook_group_interface.php:175
+msgid "Close"
+msgstr ""
+
+#: addrbook_search.php:171
+msgid "Close window"
+msgstr "Закрыть окно"
+
+#: abook_group_PEAR_database.php:109 abook_group_PEAR_database.php:141
+#: abook_group_PEAR_database.php:190 abook_group_PEAR_database.php:301
+#: abook_group_PEAR_database.php:373 abook_group_PEAR_database.php:423
+#: abook_group_PEAR_database.php:506
+#, php-format
+msgid "Database error: %s"
+msgstr "Ошибка базы данных: %s"
+
+#: list_abook_group.php:75
+msgid "Delete"
+msgstr "Удалить"
+
+#: modifyGroup.php:71
+msgid "Delete Group"
+msgstr "Удалить группу"
+
+#: abook_group_interface.php:66 addrbook_search.php:39
+msgid "E-mail"
+msgstr "E-mail"
+
+#: abook_group_PEAR_database.php:59 abook_group_PEAR_database.php:175
+#: abook_group_PEAR_database.php:248 abook_group_PEAR_database.php:259
+#: abook_group_PEAR_database.php:329 abook_group_PEAR_database.php:338
+msgid "Global address book"
+msgstr "Общая адресная книга"
+
+#: abook_group_PEAR_database.php:238
+#, php-format
+msgid "Group %s already exists"
+msgstr "Группа %s уже существует"
+
+#: abook_group_PEAR_database.php:404 abook_group_PEAR_database.php:472
+#, php-format
+msgid "Group %s does not exist"
+msgstr "Группа %s не существует"
+
+#: abook_group_PEAR_database.php:436
+msgid "Group name is unchanged."
+msgstr "Имя группы не изменено"
+
+#: abook_group_PEAR_database.php:444
+msgid "Group name was empty."
+msgstr "Имя группы не определено."
+
+#: abook_group_interface.php:140 list_abook_group.php:52 setup.php:65
+msgid "Groups"
+msgstr "Группы"
+
+#: abook_group_interface.php:67 addrbook_search.php:40
+msgid "Info"
+msgstr "Информация"
+
+#: list_abook_group.php:76
+msgid "List"
+msgstr "Список"
+
+#: abook_group_functions.php:91
+msgid "List All Groups"
+msgstr "Список всех групп"
+
+#: addrbook_search.php:168
+msgid "List all"
+msgstr "Весь список"
+
+#: listMembers.php:90
+msgid "Members"
+msgstr "Адресаты"
+
+#: list_abook_group.php:74 modifyGroup.php:162
+msgid "Modify"
+msgstr "Изменить"
+
+#: modifyGroup.php:119
+msgid "Modify Group Name"
+msgstr "Изменить имя группы"
+
+#: abook_group_interface.php:65 addrbook_search.php:38
+msgid "Name"
+msgstr "Имя"
+
+#: modifyGroup.php:147
+msgid "New Group Name"
+msgstr "Новое имя группы"
+
+#: addrbook_search.php:201
+msgid "New Group Name is Empty"
+msgstr "Новое имя для группы не определено"
+
+#: modifyGroup.php:80
+msgid "No"
+msgstr "Нет"
+
+#: addrbook_search.php:261 addrbook_search.php:290
+msgid "No persons matching your search was found"
+msgstr "Имя не найдено"
+
+#: addrbook_search.php:327
+msgid "OR"
+msgstr "ИЛИ"
+
+#: modifyGroup.php:135
+msgid "Old Group Name"
+msgstr "Старое имя группы"
+
+#: listMembers.php:137
+msgid "Remove"
+msgstr "Удалить"
+
+#: listMembers.php:68
+msgid "Remove Successful"
+msgstr "Успешно удалено"
+
+#: addrbook_search.php:167
+msgid "Search"
+msgstr "Поиск"
+
+#: addrbook_search.php:142
+#, fuzzy
+msgid "Search for name to add"
+msgstr "Искать по адресу"
+
+#: abook_group_interface.php:74 addrbook_search.php:43
+msgid "Source"
+msgstr "Источник"
+
+#: abook_group_interface.php:171
+msgid "There are no groups available for selection"
+msgstr "Нет доступных групп для выбора"
+
+#: addrbook_search.php:36
+msgid "Toggle All"
+msgstr "Подключить всех"
+
+#: addrbook_search.php:244
+#, php-format
+msgid "Unable to list addresses from %s"
+msgstr "Нельзя вывести список адресов из %s"
+
+#: abook_group_interface.php:105
+msgid "Use Addresses"
+msgstr "Использовать адреса"
+
+#: abook_group_PEAR_database.php:280
+msgid "User Already Exists in The Group"
+msgstr "Пользователь в группе уже существует"
+
+#: abook_group_PEAR_database.php:352
+msgid "User Does Not Exist in The Group"
+msgstr "Пользователь в группе не найден"
+
+#: modifyGroup.php:79
+msgid "Yes"
+msgstr "Да"
+
+#: list_abook_group.php:91
+msgid "You Currently Do Not Have Any Groups"
+msgstr "На текущий момент у Вас не определена ни одна группа"
+
+#: listMembers.php:125
+msgid "You Currently Do Not Have Any Members In This Group"
+msgstr "В этой группе не определено адресатов"
+
+#: setup.php:43
+msgid ""
+"You can create address groups and add email addresses from your address book"
+msgstr ""
+"Вы можете создать групповые адреса и добавлять e-mail адреса из Вашей "
+"адресной книги"
+
+#: addrbook_search.php:279
+msgid "Your search failed with the following error(s)"
+msgstr "Поиск прерван по следующим причинам"
+
+#: addrbook_search.php:152
+msgid "in"
+msgstr "в"

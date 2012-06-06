@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>b-search test</title>
+
+    <link rel="stylesheet" href="./stylesheets/j-searcher.css" type="text/css" media="screen">
+
+		<!--[if lt IE 8]>
+      <link rel="stylesheet" href="./stylesheets/j-searcher.ie.css" type="text/css" media="screen">
+		<![endif]-->
+
+		<!--[if IE 6]>
+      <link rel="stylesheet" href="./stylesheets/j-searcher.ie6.css" type="text/css" media="screen">
+		<![endif]-->
+
+    <script src="./javascripts/global/inheritance.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./javascripts/global/templating.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./javascripts/jquery.dependClass.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./javascripts/jquery.searcher.js" type="text/javascript" charset="utf-8"></script>
+    
+    <style type="text/css" media="screen">
+
+      body { background: white; padding: 0; margin: 0; }
+      .layout  { padding: 20px; font-family: Georgia, serif; }
+      .searcher-container { position: relative; left: -7px; }
+
+      .comment { color: gray; font-size: 12px; }
+      pre { font-size: 14px; }
+    </style>
+
+	</head>
+<body>
+  
+  <div class="layout">
+
+    <h3>Simple search:</h3>
+    <div class="searcher-container" style="width: 200px">
+      <input id="SimpleSearcher" type="search" placeholder="Search" autocomplete="off" />
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      $("#SimpleSearcher").searcher();
+    </script>
+    <p>
+<pre>
+&lt;div style="width: 200px"&gt; <span class="comment">&larr; Define searcher width by setting width to parent node.</span>
+  &lt;input id="SimpleSearcher"
+    type="search"
+    placeholder="Search"
+    autocomplete="off"
+  /&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript" charset="utf-8"&gt;
+  $("#SimpleSearcher").searcher();
+&lt;/script&gt;
+</pre>
+    </p>
+    <br/>
+
+    <h3>Incremental search:</h3>
+    <div class="searcher-container" style="width: 200px">
+      <input id="IncrementalSearcher" type="search" placeholder="Search" incremental="yes" onsearch="onSearchHandler.apply(this, arguments)" autocomplete="off" />
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      $("#IncrementalSearcher").searcher();
+      function onSearchHandler(){
+        this.loading(true);
+        /* AJAX or simple JavaScript actions */
+      }
+    </script>
+    <p>
+<pre>
+&lt;div style="width: 200px"&gt;
+  &lt;input id="IncrementalSearcher"
+    type="search"
+    placeholder="Search"
+    autocomplete="off"
+
+    <strong>incremental=</strong>"yes"
+    <strong>onsearch=</strong>"onSearchHandler.apply(this, arguments)"
+
+  /&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript" charset="utf-8"&gt;
+  $("#IncrementalSearcher").searcher();
+  function onSearchHandler(){
+    this.loading(true);
+    <span class="comment">/* AJAX or simple JavaScript actions */</span>
+  }
+&lt;/script&gt;
+</pre>
+    </p>
+    <br/>
+    
+    <h3>Getting Search Object</h3>
+    <p>
+<pre>
+&lt;script type="text/javascript" charset="utf-8"&gt;
+  $("#IncrementalSearcher").data("SearchHandler")<span class="comment">.onsearch = function(){ /* whatever */ };</span>
+&lt;/script&gt;
+</pre>
+    </p>
+  </div>
+</body>
+</html>

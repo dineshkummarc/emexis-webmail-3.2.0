@@ -1,0 +1,86 @@
+Addressbook Import-Export ChangeLog
+$Id: CHANGELOG,v 1.30 2007/06/09 08:38:42 tokul Exp $
+----------------------------------------------------------------------
+Todo for 1.2:
+ * Own implementation of fgetcsv in order to solve multiple delimiter
+   issues. PHP allows to use only one character for delimiter.
+ * Add options that force data import by adding custom data 
+   to empty required fields.
+
+1.1
+ * Fixed uploaded file locking issues on Windows OSes.
+ * Handle attachment directory configuration without trailing delimiter.
+ * Added UPLOAD_ERR_EXTENSION handling.
+
+1.0:
+ * Fixed notice about missing label field in some csv imports. 
+
+1.0rc1:
+ * Address book object is checked for errors after addressbook_init().
+ * Address book export uses text/comma-separated-values MIME type instead
+   of application/CSV.
+ * Fixed detection of LDIF import.
+ * Removed empty columns from the end of imported CSV array.
+
+1.0pre1:
+ * Fixed translation of address book backend name.
+ * Added input character set and delimiter selection options. Minimal 
+   SquirrelMail version increased to 1.4.4. Older versions don't 
+   support required character set conversion functions.
+ * Reduced minimal data requirements to two fields.
+ * Check if file uploads are enabled before creating address book import 
+   form.
+ * Added php 4.2+ upload error processing.
+ * Uploaded address books are moved to attachment directory before 
+   processing. Fixes issues with open_basedir limits.
+ * Added bind_textdomain_codeset support.
+ * Address book backend selection is limited to backends that allow 
+   writing (for import) and listing (for export).
+ * Added backend selection to export form.
+ * Export form sends file headers with standard SquirrelMail 
+   SendDownloadHeaders() function.
+ * Added string delimiter option to exported data.
+ * Started using own functions for error messages.
+ * Added SquirrelMail 1.5.2+ init support.
+ * Disabled comment sections that were broken in html standards 
+   compliance rendering mode.
+ * Added header to csv export.
+ * Reduced number of writes to session. Session data is accessed with
+   standard SquirrelMail sqsession_* and sqGetGlobalVar functions.
+ * Added failsafe dgettext() function for setups that don't support it.
+
+0.9:
+ * Use sqGetGlobalVar() to check $_POST vars in scripts.
+
+0.9rc1: 
+ * Removed import size limit from import form and made it configurable.
+   v.0.8 changelog contains incorrect information and size limit is
+   still present in v.0.8 import form.
+ * Code cleanup.
+ * Use 'aie_' prefix in function names.
+ * Internationalization fixes. Use abook_import_export gettext domain
+   and convert strings to gettext.
+ * Added site configuration options. See INSTALL
+ * Fixed php errors for csv with small number of fields.
+ * Added visible column numbers to imported data in order to identify 
+   failed imports.
+ * Retrieve user agent string with sqGetGlobalVar from server vars 
+   instead of $_ENV.
+ * Moved import button to bottom of the page in order to load entire 
+   form before displaying it.
+
+0.8:
+ * Fixed import to remove 5k import limit.
+ * Added ability to select different addressbook backends.
+
+0.7:
+ * Major changes to the import function. Can now import from Outlook as
+   long as it has a "First Name", "Last Name", and "E-mail Address"
+   field specified somewhere in the first row. Also changed
+   reordering functionality after the file has been uploaded and 
+   before the changes to the address book
+
+0.6:
+ * Fixes a bug with the export feature.  The username variable was not
+   being exported to that procedure and the download stream was not
+   opening correctly. 

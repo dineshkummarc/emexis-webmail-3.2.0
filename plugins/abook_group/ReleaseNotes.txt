@@ -1,0 +1,24 @@
+    **************************************
+    * Address Group Plugin Release Notes *
+    *     v.0.51.1                       *
+    **************************************
+
+This plugin version fixes some typos and session handling issues.
+It also adds three new string translations. Thanks to Phil Driscoll 
+and Florian Daeumling.
+
+
+    **************************************
+    * Address Group Plugin Release Notes *
+    *     v.0.51                         *
+    **************************************
+
+This is intermediate plugin release before making big changes in
+plugin code. Planned changes are not backwards compatible with 
+current address book data format.
+
+Known issues:
+* remote backends (LDAP) are not enabled.
+* plugin does not work correctly in mixed environments with file 
+  based and db based address books.
+* plugin does not work with two flat file address books correctly.

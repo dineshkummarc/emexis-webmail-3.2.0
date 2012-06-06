@@ -1,0 +1,5 @@
+ @import url("jquery.treeview.css");
+
+.treeview li{
+    cursor:pointer;
+}

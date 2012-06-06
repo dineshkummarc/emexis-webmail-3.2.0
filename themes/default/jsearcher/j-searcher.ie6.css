@@ -1,0 +1,15 @@
+/* Pretty search PNG fix */
+
+  .j-searcher .j-searcher_left,
+  .j-searcher .j-searcher_right { overflow: hidden; background: none; zoom: 1; }
+
+  .j-searcher .j-searcher_left i,
+  .j-searcher .j-searcher_right i { position: absolute; width: 500px; height: 58px; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./stylesheets/j-searcher_input.png', sizingMethod='crop'); }
+
+  .j-searcher .j-searcher_left i { left: 0; top: 0; }
+  .j-searcher .j-searcher_right i { right: 0; top: 0; }  
+
+  .j-searcher-focus .j-searcher_left i,
+  .j-searcher-focus .j-searcher_right i { top: -29px; }
+  
+/* Pretty search PNG fix (end) */

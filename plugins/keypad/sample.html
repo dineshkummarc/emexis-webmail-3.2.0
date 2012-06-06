@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+     "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Keypad</title>
+<style type="text/css">
+@import "css/jquery.keypad.css";
+</style>
+<link rel="stylesheet" href="css/keypadstyle.css" type="text/css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.keypad.js"></script> 
+<script type="text/javascript" src="js/jquery.keypad-en.js"></script>
+<script type="text/javascript" src="js/jquery.keypad-pt-BR.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	$('#l10nLayout').keypad($.extend({prompt: '',
+    layout: $.keypad.azertyLayout}, $.keypad.regional['pt-BR']));
+	$("#teclado").change(function(){
+		if($(this).val() == 1){
+			$('#l10nLayout').keypad('change', $.keypad.regional['en']);
+			$('#l10nLayout').keypad('change', {layout: $.keypad.qwertyLayout});
+		}else{
+			$('#l10nLayout').keypad('change', $.keypad.regional['pt-BR']); 
+			$('#l10nLayout').keypad('change', {layout: $.keypad.azertyLayout});
+		}
+	});
+	$("#l10nLayout").keypad('show');
+	$('#l10nLayout').removeAttr("readonly");
+
+	$('#l10nLayout').keypad($.extend({prompt: '',
+    layout: $.keypad.azertyLayout}, $.keypad.regional['pt-BR']));
+});
+</script>
+</head>
+<body>
+	<select id="teclado">
+		<option value="1">Inglês</option>
+		<option value="2" selected="selected">Português</option>
+	</select>
+<!-- 	<div id="l10n" class="feature"> -->
+			<input type="password" size="10" id="l10nLayout"></p>
+<!--	</div>-->
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+GENERAL USE
+===========
+Plugin allows adding addresses from CSV (comma separated values) file to 
+available local SquirrelMail address books. It also allows exporting
+SquirrelMail address book entries to CSV file.
+
+
+Authors
+=======
+v.0.3-0.5 Lewis Bergman
+v.0.6     Dustin Anders
+v.0.7-0.8 Christian Sauer <christian at endrun.org>
+          Andy Brook <andyb at iserv.net> 
+
+From v.0.9 plugin is maintained by SM-Plugins project developers.
+See http://sourceforge.net/projects/sm-plugins/
+
+
+Bugs
+====
+Use tracker on http://sourceforge.net/projects/sm-plugins/ to report
+plugin bugs. Check CHANGELOG file before reporting known issues.
+
+
+Error messages
+==============
+Some plugin error messages direct end user to system administrator.
+If end user selects different interface language, error messages 
+can be translated to selected language.
+
+Here goes explanation of error messages and ways to solve them.
+
+* "Imported CSV file is too big."
+* "The uploaded file exceeds the MAX_FILE_SIZE directive that was 
+  specified in the HTML."
+
+  Plugin defaults to 5 KB upload limit. It can be increased in site
+  configuration file, $aie_csv_maxsize variable. See INSTALL 
+  documentation and plugins/abook_import_export/config_default.php
+  file.
+
+  5KB limit is historical. Older plugin versions used this value. 
+  Imported address books usually exceed it. Variable makes sure 
+  that you read plugin install documentation. Don't set it to very 
+  high value. If limit is too high, users might hit session data 
+  storage or PHP memory limits.
+
+  Please note that plugin uses html MAX_FILE_SIZE attribute in 
+  upload form, but it does not trust submitted value when 
+  uploaded data is processed. Uploaded data size is always compared 
+  with $aie_csv_maxsize configuration variable. 'MAX_FILE_SIZE' 
+  error is standard PHP error message. It can be displayed only
+  when uploaded address book size is very close to address book 
+  upload limits set by $aie_csv_maxsize.
+
+* "Can't move uploaded file to attachment directory."
+
+  Plugin stores processed data in SquirrelMail attachment directory.
+  SquirrelMail can look functional, when attachment directory is not
+  writable, but all uploads will fail. Please check your config. 
+  Directory specified in $attachment_dir settings must be writable.
+  If relative paths are used, they must use SM_PATH constant.
+
+* "Address book uploads are disabled."
+
+  You have file uploads disabled in PHP configuration. End users 
+  can't import address books. Enable file uploads or set 
+  $aie_hide_upload_error configuration variable to true. If you have 
+  set this PHP configuration variable with php_value or php_admin_value,
+  fix your configuration. file_uploads variable is boolean and should 
+  be set with php_flag or php_admin_flag.
+
+* "Unable to access uploaded data."
+
+  Plugin should save uploaded data in session during first import stage
+  and retrieve it in second stage. Error message is displayed when data
+  retrieval fails in second stage. This is a simple safety check. It is 
+  unlikely to happen. If you see it, error might be caused by some 
+  limitations in your session handler. Maybe by session data size 
+  limits.
+
+* "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+* "The uploaded file was only partially uploaded."
+* "No file was uploaded."
+* "Missing a temporary folder."
+* "Failed to write file to disk."
+
+  Standand PHP upload error messages. Something is wrong with file 
+  uploads. See http://www.php.net/features.file-upload
+
+* "Please select a file for uploading."
+
+  End user forgot to select file that must be uploaded or selected data is
+  unreadable.
+
+* "Unknown upload error."
+
+  PHP upload error handler returned unknown error code. Maybe your 
+  PHP version introduced some new error code variable and plugin 
+  can't handle it. Please inform plugin developers about this error
+  and provide information about used PHP version.
+
+
+

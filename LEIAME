@@ -1,0 +1,54 @@
+INTRODUÇÂO
+==========
+
+Esse arquivo descreve os passos básicos para instalação do Emexis-Webmail 3 no seu servidor WEB.
+
+REQUERIMENTOS
+=============
+
+* Servidor WEB Apache/IIS
+* PHP 5 ou superior, com o driver do banco de dados instalado
+* PostgreSQL 8 ou superior (Aconselhamos a utlização do PostgreSQL, por enquanto é o único que tem pleno suporte)
+* A framework PEAR com o pacote DB (Abstração de banco de dados), Net_socket, Net_SMTP e Mail_mime instalados.
+
+INSTALAÇÃO E CONFIGURAÇÃO BÁSICA
+================================
+
+* Descompacte e coloque essa pasta em algum lugar dentro do seu document root
+	tar -xvzf emexis3.tar.gz
+* Acesse a pasta config/ dentro dela há alguns arquivos específicos para configuração:
+	config_imap.php
+		$imapServerAddress = '127.0.0.1'; #Endereço do servidor IMAP
+		$imapPort               = 143; 
+
+	config_smtp.php 
+		$smtpServerAddress = '127.0.0.1'; #Endereço do servidor SMTP
+		$smtpPort = 25;	
+
+	config_database.php #Configuração do banco de dados  
+		$dsn_pear = 'pgsql://usuario:senha@host:porta/bancodedados';
+		Ex: 'pgsql://postgres:postgres@localhost:5432/emexiswebmail';
+
+	config_general.php  
+		$attachment_dir = '/var/www/attach'; #É a pasta temporária dos anexos, verifique se ela tem permissão de escrita e se existe
+
+	config_server.php 
+		$domain = ' example' //Nome do domínio 
+		$squirrelmail_default_language = 'pt_BR'; #Linguagem do Webmail
+
+
+BANCO DE DADOS
+==============================
+	Para criar o database você deve ser o super usuário do banco, que geralmente é o usuário postgres
+    Se não existir crie um database
+    Então utilize o arquivo postgres.sql dentro da pasta schema.
+
+    Exemplo:
+    $ createuser emexis
+    $ createdb -O emexis emexiswebmail
+    $ psql emexiswebmail
+
+	emexis =# ALTER USER emexis WITH PASSWORD 'the_new_password';
+    emexis => \i schema/postgres.sql
+
+Essas são as configurações básicas para o funcionamento.

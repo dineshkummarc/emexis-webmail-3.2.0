@@ -1,0 +1,13 @@
+    *********************************************
+    * SquirrelMail Select Language plugin v.1.1 *
+    *               Release Notes               *
+    *********************************************
+
+SquirrelMail Select Language plugin allows to choose interface language
+in login form.
+
+This plugin release fixes issues with custom_charset plugin and removes 
+$available_languages support. $available_languages configuration option
+was available only in 1.5.1cvs. Features provided by this configuration
+options are implemented in limit_languages plugin. They are not used
+in 1.5.1+ due to implemented dynamic translation loading functions.

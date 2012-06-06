@@ -1,0 +1,53 @@
+Installing Plugin
+=================
+
+1) Start with untaring the file into the plugins directory.
+Here is a example for the 1.0 version of the select_language
+plugin.
+
+    $ cd /var/www/squirrelmail/plugins
+    $ tar -xzvf /home/archives/select_language-1.0-1.4.0.tar.gz
+
+2) Then go to your config directory and run conf.pl.  Choose
+option 8 and move the plugin from the "Available Plugins"
+category to the "Installed Plugins" category.  Save and exit.
+
+    $ cd ../config/
+    $ ./conf.pl
+
+Some plugin settings can be adjusted by creating 
+config/select_language_config.php or 
+plugins/select_language/config.php configuration file.
+See plugins/select_language/config_default.php.
+
+If both configuration files are present, plugin uses the one in 
+config/ directory. If configuration files are not present, plugin
+uses default configuration. 
+
+Plugin translations use select_language domain. select_language.po 
+and select_language.mo files should be stored in same directory 
+that stores squirrelmail.po and squirrelmail.mo files. Translations 
+are maintained by SquirrelMail Internationalization Team and are 
+distributed in SquirrelMail locale packages.
+
+
+login_form hook patch
+=====================
+Older SquirrelMail versions uses do_hook call in login_form hook.
+Plugins add code to login form after login button. If you want 
+to see language selection box before login button, you must patch
+your SquirrelMail install and set select_language_patched option
+in plugin's configuration file.
+
+You can patch SquirrelMail with 'patch -p 0 < login.php.diff' command.
+
+  cd /path/to/squirrelmail
+  cd src
+  patch -p 0 < ../plugins/select_language/login.php.diff
+
+See SquirrelMail tracker #1245070 for more details about issue.
+
+https://sourceforge.net/tracker/?func=detail&atid=423679&aid=1245070&group_id=311
+
+WARNING: Patch can break formating in login_auto, multilogin and
+show_ssl_link plugins.

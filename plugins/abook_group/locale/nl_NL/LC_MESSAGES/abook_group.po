@@ -1,0 +1,243 @@
+# Squirrelmail abook_group plugin
+# Dutch translation
+# Copyright (C) 2003 The Squirrelmail Devellopment Team
+# This file is distributed under the same license as the PACKAGE package.
+# Ronald H. Zeelenberg <R.H.Zeelenberg@Bravo-Informatisering.nl>, 2003.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: abook_group\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-09 11:46-0400\n"
+"PO-Revision-Date: 2003-12-30 21:55 -0500\n"
+"Last-Translator: M.J. Prinsen <translastion@prinsenonline.com>\n"
+"Language-Team: Dutch <squirrelmail-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addrbook_search.php:323 addrbook_search.php:340
+msgid "Add"
+msgstr "Toevoegen"
+
+#: abook_group_functions.php:91
+msgid "Add New Members"
+msgstr "Voeg nieuwe leden toe"
+
+#: addrbook_search.php:192 addrbook_search.php:220
+msgid "Add Successful"
+msgstr "Toevoeging succesvol"
+
+#: addrbook_search.php:310
+msgid "Add to Existing Group: "
+msgstr "Toevoegen aan bestaande groep: "
+
+#: addrbook_search.php:336
+msgid "Add to New Group (supply group name):"
+msgstr "Toevoegen aan nieuwe groep (geef groepsnaam):"
+
+#: setup.php:41
+msgid "Address Groups"
+msgstr "Adresgroepen"
+
+#: abook_group_PEAR_database.php:217 abook_group_PEAR_database.php:317
+#: abook_group_PEAR_database.php:385 abook_group_PEAR_database.php:453
+msgid "Addressbook is read-only"
+msgstr "Adresboek is alleen leesbaar"
+
+#: addrbook_search.php:153
+msgid "All address books"
+msgstr "Alle adresboeken"
+
+#: abook_group_PEAR_database.php:487
+#, php-format
+msgid "Another group %s already exists"
+msgstr "Andere groep %s bestaat al"
+
+#: modifyGroup.php:75
+msgid "Are you sure you want to delete "
+msgstr "Weet u zeker dat u dit wilt verwijderen "
+
+#: abook_group_interface.php:175
+msgid "Close"
+msgstr ""
+
+#: addrbook_search.php:171
+msgid "Close window"
+msgstr "Sluit venster"
+
+#: abook_group_PEAR_database.php:109 abook_group_PEAR_database.php:141
+#: abook_group_PEAR_database.php:190 abook_group_PEAR_database.php:301
+#: abook_group_PEAR_database.php:373 abook_group_PEAR_database.php:423
+#: abook_group_PEAR_database.php:506
+#, php-format
+msgid "Database error: %s"
+msgstr "Database fout: %s"
+
+#: list_abook_group.php:75
+msgid "Delete"
+msgstr "Verwijder"
+
+#: modifyGroup.php:71
+msgid "Delete Group"
+msgstr "Verwijder Groep"
+
+#: abook_group_interface.php:66 addrbook_search.php:39
+msgid "E-mail"
+msgstr "E-mail"
+
+#: abook_group_PEAR_database.php:59 abook_group_PEAR_database.php:175
+#: abook_group_PEAR_database.php:248 abook_group_PEAR_database.php:259
+#: abook_group_PEAR_database.php:329 abook_group_PEAR_database.php:338
+msgid "Global address book"
+msgstr "Algemeen adresboek"
+
+#: abook_group_PEAR_database.php:238
+#, php-format
+msgid "Group %s already exists"
+msgstr "Groep %s bestaat al"
+
+#: abook_group_PEAR_database.php:404 abook_group_PEAR_database.php:472
+#, php-format
+msgid "Group %s does not exist"
+msgstr "Groep %s bestaat niet"
+
+#: abook_group_PEAR_database.php:436
+msgid "Group name is unchanged."
+msgstr "Groepsnaam is niet veranderd."
+
+#
+#: abook_group_PEAR_database.php:444
+msgid "Group name was empty."
+msgstr "Groepsnaam was leeg"
+
+#: abook_group_interface.php:140 list_abook_group.php:52 setup.php:65
+msgid "Groups"
+msgstr "Groepen"
+
+#: abook_group_interface.php:67 addrbook_search.php:40
+msgid "Info"
+msgstr "Info"
+
+#: list_abook_group.php:76
+msgid "List"
+msgstr "Lijst"
+
+#: abook_group_functions.php:91
+msgid "List All Groups"
+msgstr "Toon alle groepen"
+
+#: addrbook_search.php:168
+msgid "List all"
+msgstr "Toon alles"
+
+#: listMembers.php:90
+msgid "Members"
+msgstr "Leden"
+
+#: list_abook_group.php:74 modifyGroup.php:162
+msgid "Modify"
+msgstr "Wijzig"
+
+#: modifyGroup.php:119
+msgid "Modify Group Name"
+msgstr "Wijzig groepsnaam"
+
+#: abook_group_interface.php:65 addrbook_search.php:38
+msgid "Name"
+msgstr "Naam"
+
+#: modifyGroup.php:147
+msgid "New Group Name"
+msgstr "Nieuwe groepsnaam"
+
+#: addrbook_search.php:201
+msgid "New Group Name is Empty"
+msgstr "Nieuwe groepsnaam is leeg"
+
+#: modifyGroup.php:80
+msgid "No"
+msgstr "Nee"
+
+#: addrbook_search.php:261 addrbook_search.php:290
+msgid "No persons matching your search was found"
+msgstr "Geen persoon gevonden tijdens het zoeken"
+
+#: addrbook_search.php:327
+msgid "OR"
+msgstr "OF"
+
+#: modifyGroup.php:135
+msgid "Old Group Name"
+msgstr "Oude groepsnaam"
+
+#: listMembers.php:137
+msgid "Remove"
+msgstr "Verwijder"
+
+#: listMembers.php:68
+msgid "Remove Successful"
+msgstr "Verwijdering succesvol"
+
+#: addrbook_search.php:167
+msgid "Search"
+msgstr "Zoeken"
+
+#: addrbook_search.php:142
+#, fuzzy
+msgid "Search for name to add"
+msgstr "Zoek toe te voegen adres"
+
+#: abook_group_interface.php:74 addrbook_search.php:43
+msgid "Source"
+msgstr "Bron"
+
+#: abook_group_interface.php:171
+msgid "There are no groups available for selection"
+msgstr "Er zijn geen groepen beschikbaar voor selectie"
+
+#: addrbook_search.php:36
+msgid "Toggle All"
+msgstr "Selecteer alles"
+
+#: addrbook_search.php:244
+#, php-format
+msgid "Unable to list addresses from %s"
+msgstr "Niet in staat om adressen van  %s te tonen"
+
+#: abook_group_interface.php:105
+msgid "Use Addresses"
+msgstr "Gebruik adressen"
+
+#: abook_group_PEAR_database.php:280
+msgid "User Already Exists in The Group"
+msgstr "Gebruiker bestaat al in de groep"
+
+#: abook_group_PEAR_database.php:352
+msgid "User Does Not Exist in The Group"
+msgstr "Gebruiker bestaat niet in de groep"
+
+#: modifyGroup.php:79
+msgid "Yes"
+msgstr "Ja"
+
+#: list_abook_group.php:91
+msgid "You Currently Do Not Have Any Groups"
+msgstr "U heeft geen groepen op dit moment"
+
+#: listMembers.php:125
+msgid "You Currently Do Not Have Any Members In This Group"
+msgstr "U heeft op dit moment geen leden in deze groep"
+
+#: setup.php:43
+msgid ""
+"You can create address groups and add email addresses from your address book"
+msgstr "U kunt adresgroepen en e-mailadressen aanmaken vanuit uw adresboek"
+
+#: addrbook_search.php:279
+msgid "Your search failed with the following error(s)"
+msgstr "Uw zoekdracht is mislukt met de volgende fout(en)"
+
+#: addrbook_search.php:152
+msgid "in"
+msgstr "in"

@@ -1,0 +1,73 @@
+
+    ************************************
+    * Addressbook Import-Export plugin *
+    *          Release Notes           *
+    *          Version: 1.1            *
+    ************************************
+
+This plugin version contains bugfixes for misconfigured $attachment_dir,
+locking of uploads on Windows OSes and support of PHP 5.2+ upload error 
+codes.
+
+Release adds one more translatable message.
+
+There are no site configuration changes. Plugin uses same configuration 
+variables as 1.0 release and is backwards compatible with v.0.9 site
+configuration files.
+
+
+    ************************************
+    * Addressbook Import-Export plugin *
+    *          Release Notes           *
+    *          Version: 1.0            *
+    ************************************
+
+This plugin version contains some enhancements in CSV import 
+functions. End user can select CSV delimiters and character set.
+Reduced number of session write operations. You can find more
+information in CHANGELOG file.
+
+Configuration changes
+---------------------
+This plugin version adds two configuration variables. 
+$aie_input_charsets array stores character sets that can be 
+used for address book conversions. Default variable value matches
+standard SquirrelMail 1.4.4 decoding character sets. If other
+character sets are added to this array, they must be supported by
+SquirrelMail decoding functions (see functions/decode directory).
+$aie_hide_upload_error boolean variable allows to disable error 
+message, which is displayed when file uploads are disabled in PHP
+configuration.
+
+Plugin is backwards compatible with v.0.9 site configuration files.
+
+Requirements
+------------
+This plugin version increased minimal SquirrelMail version 
+requirements. Plugin requires SquirrelMail 1.4.4 or later. 
+SquirrelMail 1.5.0 version is not supported. Older SquirrelMail 
+versions don't provide functions required for new plugin features.
+If you use older SquirrelMail version - upgrade it or use 
+abook_import_export v.0.9 plugin.
+
+Use of PHP 4.3.0 or later is recommended. If PHP does not have 
+gettext extension support - use of SquirrelMail 1.5.1 or later is
+recommended.
+
+Other changes
+-------------
+This plugin version is updated to work with modified SquirrelMail 
+1.5.2 init structure. Other plugin changes are listed in CHANGELOG
+file.
+
+Issues
+------
+Text delimiter options are not available in older PHP versions. 
+Upload errors are not verbose in PHP 4.1.x. Plugin translations 
+might have issues in PHP 4.1.x with gettext extension and in 
+all SquirrelMail 1.4.x installations, when PHP gettext extension 
+is not available.
+
+These issues are related to limited options provided by older 
+PHP and SquirrelMail versions. They can't be fixed in plugin 
+without some complex hacks.

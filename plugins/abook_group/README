@@ -1,0 +1,33 @@
+************************
+* Address Group Plugin *
+************************
+Plugin allows to group users that are stored in address books.
+
+AUTHORS:
+--------
+Kevin Ho - original plugin developer.
+Jon Nelson <quincy at linuxnotes.net> - maintainer of plugin
+   from 0.20 to 0.50 versions.
+
+Currently plugin is maintained by admins of SM Plugins site.
+See http://sourceforge.net/projects/sm-plugins/
+
+If you have issues with plugin, use SourceForge bug tracker. 
+
+
+TRANSLATORS:
+------------
+cs_CZ - Ondra 'Kepi' Kudlk <kepi at cacwa.cz>
+de_DE - Thomas M. Rother <t.rother at netzwissen.de>
+es_ES - Rodolfo Gonzalez Gonzalez <rodolfo at equinoxe.g-networks.net>
+fr_FR - Benistan Cedric <cedric at benistan.com>
+id_ID - Rachim Tamsjadi <tamsjadi at icqmail.com>
+it_IT - Roberto Piola <roberto at ilpiola.it>
+lt_LT - Tomas Kuliavas <tokul at users.sourceforge.net>
+nl_NL - Ronald H. Zeelenberg <R.H.Zeelenberg at Bravo-Informatisering.nl>
+        M.J. Prinsen <translation at prinsenonline.com>
+nn_NO - Ola Ketil Siqveland <olaketil at hotmail.com>
+pt_BR - Fabio Marcos Pedroso Filho <fabio at unixworks.com.br>
+ru_RU - Andriy M. Shevchuk <morbid at angel.org.ua>
+sv_SE - Fredrik Jervfors <sqm_admin at fimbul.net>
+uk_UA - Serhij Dubyk <dubyk at library.lviv.ua>

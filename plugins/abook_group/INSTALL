@@ -1,0 +1,74 @@
+UPGRADING:
+----------
+This applies to upgrading to version >= 0.35.
+
+Some languages were not displaying the members of existing groups.
+To fix this problem I changed the way the "type" field stored it's 
+information (i.e., "Personal address book").  The "type" field now 
+stores this information in English, but is still translated for the
+end user.  This also gives you the ability to list groups created
+in other languages.
+
+To upgrade install the newest version of the plugin and then modify
+your database with something similar to:
+
+UPDATE addressgroups
+SET type='Personal address book'
+WHERE owner='mike';
+ 
+'mike' should be replaced with the user whos groups need to be changed.          
+
+INSTALL:
+--------
+Backend for personal addressbook stored in a database,
+accessed using the DB-classes in PEAR. Follow the instructions
+in doc/db-backend.txt to get that setup. 
+
+When you've got that done copy the tar.gz to plugins/ directory 
+and:
+
+  tar zxvf abook_group.tar.gz 
+
+USING FLAT FILE SUPPORT:
+------------------------
+If a database hasn't been selected using the configure script then this
+plugin will attempt to use a flat file format.  If you selected database
+support continue reading:
+
+USING A DATABASE:
+-----------------
+You'll need to create an addressgroups table in your database. 
+The table used should have the following columns:
+
+    Columns   | Type | Modifier
+--------------+------+----------
+ owner        | text |
+ nickname     | text |
+ addressgroup | text |
+ type         | text |
+
+The pair (owner,nickname, addressgroup, type) should be unique.
+
+The (owner,nickname) pair is the unique reference to the addressbook
+of the owner.
+
+Type comes in when you have two different types of address books:
+abook_database.php
+abook_global_database.php
+
+To create the table you could use something like this:
+
+create table addressgroups(
+ owner varchar(128),
+ nickname varchar(128),
+ addressgroup varchar(128),
+ type varchar(128)
+ );
+
+The lengths and datatype of the fields are suggested. Modify them to suit
+your needs, especially if you use a different database. 
+
+TRANSLATIONS:
+-------------
+Translations are stored in plugins/abook_group/locale directory. String 
+template is stored in plugins/abook_group/po/.

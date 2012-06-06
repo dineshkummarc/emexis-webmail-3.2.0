@@ -1,0 +1,1348 @@
+html,#listmails *,.compose *,.background *,.formatHeader *,.subjectMsg *,.titleAttachRead *,.menuContact a,.notice-body,
+#tableListContacts_wrapper *,.ContInfo *,.menuDrop{
+    font-family: Tahoma,Helvetica,sans-serif !important;
+    font-size:11px;
+}
+small{
+    font-size:9px !important;
+}
+html{
+    overflow:hidden;
+}
+body{
+    background-color:white;    
+    overflow:hidden;
+    margin:0;
+}
+.body{
+    padding-top:4px;
+    overflow:hidden;
+}
+.header{
+   /* height:25px;*/
+    display:none;
+}
+.left{
+    background-color:white;
+    display:none;
+    /*border:1px silver solid;*/
+    width:15%;
+    display:none;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    float:left;
+}
+.left *,.listmailHorizontal,.listmailVertical *{
+    -moz-user-select:none;     
+}
+.barcontrol{
+    display:none;
+    width:30px;
+    float:left;
+    text-align:center;    
+}
+.barcontrol>div{
+    /*position:relative;
+    top:-2px;*/
+    margin:0 5 0 5;
+    width:34px;
+    /*height:90%;*/
+}
+.right{
+    width:85.2%;
+    float:left;
+    display:none;
+}
+#message{
+    width:100%;
+}
+.listmailHorizontal{
+    width:100%;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    overflow:auto;
+}
+.folder{
+    font-size:10px;
+    padding-right: 20px;
+}
+.listmailVertical{
+    height:800px;
+    width:300px;
+    overflow-x:auto;
+    float:left;
+}
+.readHorizontal{
+    width:100%;
+    width:99%\9; /*HACK IE*/
+    height:300px;
+    float:left;
+    overflow:auto;
+}
+.readVertical{
+    position:relative;
+    z-index:1px;
+    top:-21px;
+    overflow:auto;
+    height:100%;
+    float:left;
+}
+#divisorHorizontal{
+    width:100%;
+    z-index:2;
+    height:4px;    
+    cursor: ns-resize;
+    cursor: n-resize;
+}
+
+#divisorVertical,#divisorLeft{
+    width:3px;
+    height:100%;
+    float:left;
+    display:none;
+    cursor: e-resize;
+}
+
+#divisorVertical{
+    z-index:2;
+    position: relative;
+    top:-21px;
+}
+
+
+.loader .text{
+    color:blue;
+    font-size:8pt;
+    font-weight:bold;
+}
+.loader{
+    z-index:6 !important;
+    width:72px !important;
+    background-color:transparent;
+    text-align:center;
+    height:95px;
+    display:none;    
+    top:45%;
+    left:45%;
+    right:45%;
+    bottom:45%;
+    position:absolute;
+}
+.pagelink{
+    overflow:auto;
+    display:none;
+    height:100%;
+    width:85%;
+    float:left;
+}
+.listmailWindow{
+    width:100%;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    overflow:auto;
+}
+
+/* Generic context menu styles */
+.contextMenu {
+    position: absolute;
+    width: 180px;
+    z-index: 99999;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.contextMenu LI {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contextMenu A {
+    font-size:8pt;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    outline: none;
+    padding: 1px 5px;
+    padding-left: 28px;
+}
+
+.backTopCompose a:link,.backTopCompose a:visited, .backTopCompose a:hover,
+.lineAttach a,.lineAttach a:link,
+.lineAttach a:hover,.lineAttach a:visited,#logout a,#logout a:link,
+#logout a:hover,#logout a:visited,.menuContact a{
+    color:black;
+    text-decoration: none;
+}
+
+ LI.disabled A {
+    cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+    background-color: transparent;
+}
+
+.move{
+   
+}
+.move img{
+    cursor:move;
+    padding-left:10px;
+}
+/*	Adding Icons
+	
+	You can add icons to the context menu by adding
+	classes to the respective LI element(s)
+*/
+
+  /*<li class="reply"><a href="#reply"><?php echo _("Reply");?></a></li>
+            <li class="replyall"><a href="#replyall"><?php echo _("Reply all");?></a></li>
+            <li class="forward"><a href="#forward"><?php echo _("Forward");?></a></li>
+            <li class="msgunread"><a href="#msgunread"><?php echo _("Mark like unread");?></a></li>
+            <li class="msgread"><a href="#msgread"><?php echo _("Mark like read");?></a></li>
+            <li class="delete"><a href="#delete"><?php echo _("Delete");?></a></li>
+            <li class="quit"><a href="#quit"><?php echo _("Quit");?></a></li>*/
+.contextMenu LI.open A { background-image: url(../../images/email.png); }
+.contextMenu LI.reply A { background-image: url(../../images/replyicon.png); }
+.contextMenu LI.replyall A { background-image: url(../../images/replyicon.png); }
+.contextMenu LI.forward A { background-image: url(../../images/forwardicon.png); }
+.contextMenu LI.msgunread A { background-image: url(../../images/ico_unread.gif); }
+.contextMenu LI.msgread A { background-image: url(../../images/ico_read.gif); }
+.contextMenu LI.editmsgnew A { background-image: url(../../images/edit_mail.jpeg); }
+.contextMenu LI.delete A { background-image: url(../../images/deleteicon.png); }
+.contextMenu LI.quit A { background-image: url(../../images/logout.png); }
+.contextMenu LI.refresh A { background-image: url(../../images/reload.png); }
+.contextMenu LI.addfolder A { background-image: url(../../images/folder_create.png); }
+
+
+.checkAll{
+    cursor:pointer;
+}
+.gobox{        
+    font-size:12pt;
+    cursor:pointer;
+}
+.gobox:hover{
+    text-decoration: underline;
+}
+
+#boxAjuda,#moveHelperContacts{
+    text-align:left;
+    border:1px solid black;
+    font-weight:bold;
+    font-size:8pt;
+    -moz-opacity:.75;
+    filter:alpha(opacity=75);
+    opacity:.75;
+    background-color: #fff;
+    position:absolute;
+    visibility:hidden;
+    /*left:100;
+    top:100;*/
+}
+#moveHelperContacts{
+    visibility:visible;
+    padding:3px;
+    padding-top:6px;
+}
+#moveHelperContacts span{
+    position:relative;
+    top: -5px;
+}
+#moveHelperContacts img{
+    position:relative;
+    top: -3px;
+}
+
+#boxAjuda li{
+    list-style-image: url('../../images/email.png');    
+}
+/*.gridmail tbody{
+    overflow:auto;
+    height:250px;
+}*/
+
+div.tableContainer {
+	clear: both;
+	border: 1px solid #963;
+	height: 285px;
+	overflow: auto;
+	width: 756px
+}
+
+/* Reset overflow value to hidden for all non-IE browsers. */
+html>body div.tableContainer {
+	overflow: hidden;
+	width: 756px
+}
+
+/* define width of table. IE browsers only                 */
+div.tableContainer table {
+	float: left;
+	width: 740px
+}
+
+/* define width of table. Add 16px to width for scrollbar.           */
+/* All other non-IE browsers.                                        */
+html>body div.tableContainer table {
+	width: 756px
+}
+
+/* set table header to a fixed position. WinIE 6.x only                                       */
+/* In WinIE 6.x, any element with a position property set to relative and is a child of       */
+/* an element that has an overflow property set, the relative value translates into fixed.    */
+/* Ex: parent element DIV with a class of tableContainer has an overflow property set to auto */
+thead.fixedHeader tr {
+	position: relative
+}
+
+/* set THEAD element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+html>body thead.fixedHeader tr {
+	display: block
+}
+
+/* make the TH elements pretty */
+thead.fixedHeader th {
+	background: #C96;
+	border-left: 1px solid #EB8;
+	border-right: 1px solid #B74;
+	border-top: 1px solid #EB8;
+	font-weight: normal;
+	padding: 4px 3px;
+	text-align: left
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+thead.fixedHeader a, thead.fixedHeader a:link, thead.fixedHeader a:visited {
+	color: #FFF;
+	display: block;
+	text-decoration: none;
+	width: 100%
+}
+
+/* make the A elements pretty. makes for nice clickable headers                */
+/* WARNING: swapping the background on hover may cause problems in WinIE 6.x   */
+thead.fixedHeader a:hover {
+	color: #FFF;
+	display: block;
+	text-decoration: underline;
+	width: 100%
+}
+
+/* define the table content to be scrollable                                              */
+/* set TBODY element to have block level attributes. All other non-IE browsers            */
+/* this enables overflow to work on TBODY element. All other non-IE, non-Mozilla browsers */
+/* induced side effect is that child TDs no longer accept width: auto                     */
+html>body tbody.scrollContent {
+	display: block;
+	height: 262px;
+	overflow: auto;
+	width: 100%
+}
+
+/* make TD elements pretty. Provide alternating classes for striping the table */
+/* http://www.alistapart.com/articles/zebratables/                             */
+tbody.scrollContent td, tbody.scrollContent tr.normalRow td {
+	background: #FFF;
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+}
+
+tbody.scrollContent tr.alternateRow td {
+	background: #EEE;
+	border-bottom: none;
+	border-left: none;
+	border-right: 1px solid #CCC;
+	border-top: 1px solid #DDD;
+	padding: 2px 3px 3px 4px
+}
+
+/* define width of TH elements: 1st, 2nd, and 3rd respectively.          */
+/* Add 16px to last TH for scrollbar padding. All other non-IE browsers. */
+/* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
+html>body thead.fixedHeader th {
+	width: 200px
+}
+
+html>body thead.fixedHeader th + th {
+	width: 240px
+}
+
+html>body thead.fixedHeader th + th + th {
+	width: 316px
+}
+
+/* define width of TD elements: 1st, 2nd, and 3rd respectively.          */
+/* All other non-IE browsers.                                            */
+/* http://www.w3.org/TR/REC-CSS2/selector.html#adjacent-selectors        */
+html>body tbody.scrollContent td {
+	width: 200px
+}
+
+html>body tbody.scrollContent td + td {
+	width: 240px
+}
+
+html>body tbody.scrollContent td + td + td {
+	width: 300px
+}
+
+.headerMsgVer{
+    font-size:10pt;
+    height:19px;
+    display:none;
+    white-space:nowrap;
+}
+.tableHeader{
+    display:none;
+    /*position:relative;
+    left:-3px\9;
+    left:-10px;*/
+}
+.tableHeader table { table-layout:fixed; }
+
+.tableHeader{
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;    
+    /*border-right:1px solid black;*/
+}
+.tableHeader div{
+    height:16px !important;
+}
+
+.headerMsg{ 
+    display:none;
+    width:100%;
+}
+.headerMsg div{
+    float:left;
+}
+.gridmail,.gridmail td {
+    font-size:10pt;
+    border:0px !important;
+    white-space:nowrap;
+}
+#labelBox{
+    display:none;
+    /*font-weight:bold;*/
+    /*font-size:14pt;*/
+    width:100%;
+}
+/*.header td:last{
+    background-color:silver;
+    color:white;
+}
+.header a:link,.header a:hover,.header a:visited{
+    color:white;
+}*/
+
+
+/*.formatHeader,*/
+.formatHeader div:first{
+    font-weight:bold;
+    font-size:12pt !important;
+}
+.formatHeader div:last{
+    /*border-bottom: 1px solid black;*/
+}
+.formatHeader .row span{
+    color:black;
+    cursor:pointer;
+}
+.formatHeader .row{
+    height: 15px !important;
+    display:none;
+}
+.formatHeader .row:first{
+    display:block !important;
+}
+/* Ao clicar para ler o email*/
+.iconLoad{
+    cursor:pointer;
+}
+.gridmail input[type=checkbox]{
+    /* visibility:hidden; */
+}
+.gridmail td{
+    cursor:pointer;
+}
+#dialogImportEvent,#dialogOpIdentities,#dialogPrint,#dialogConfirmDelete,#dialogConfirmDeleteFolder,#dialogCreate,.dialogOptions,.dialogFolders,.dialogContacts,.dialogCreateGroup{
+    display:none;
+    font-size:12px;
+}
+#dialogConfirmDelete .ui-widget-content,#dialogConfirmDeleteFolde .ui-widget-content{
+    overflow:hidden !important;
+}
+
+.textSubject{
+    background-color: transparent !important;
+}
+.flag1{
+    width:42px;
+}
+.flag2{
+    width:18px !important;
+}
+#renameFolder{
+    display:none;
+    text-align:center;
+}
+.hideLoad{
+    z-index:-1 !important;
+}
+#closeall{
+    display:none;
+    position:absolute;
+    top:5px;
+    right:200px;
+    font-weight:bold;
+}
+
+.ui-dialog .ui-dialog-titlebar-min { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 40px 0px 0px; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-min span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-min:hover, .ui-dialog .ui-dialog-titlebar-min:focus { padding: 0; }
+
+.ui-dialog .ui-dialog-titlebar-maxi { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 20px 0px 0px; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-maxi span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-maxi:hover, .ui-dialog .ui-dialog-titlebar-maxi:focus { padding: 0; }
+
+.minicompose,.miniread,.minioptions,.minifolder,.minicontacts,.minipic{
+    margin:2px 0px 0px 3px;
+    cursor: pointer;
+    text-align:center;
+    height: 22px !important;
+    width:26px !important;    
+}
+
+.minicompose{
+    background:url('../../images/indice2.jpeg') no-repeat center;
+}
+.miniread{
+    background:url('../../images/readIcon.png') no-repeat center;
+}
+.minioptions{
+    background:url('../../images/minioptions.png') no-repeat center;
+}
+.minifolder{
+    background:url('../../images/minioptions.png') no-repeat center;
+}
+.minicontacts{
+    background:url('../../images/group.png') no-repeat center;
+}
+.minipic{
+    background:url('../../images/icon_picture.jpg') no-repeat center;
+}
+
+.contentContacts .label{
+    /*color:#eebc00;
+    border-bottom:1px solid #eebc00;
+    border-bottom:0px solid #eebc00\9;
+    border-top:1px solid #eebc00;
+    font-weight:bold;
+    background-color:#fff0bd;*/
+}
+.labelNumMSg,.labelNumCont{
+    width:30px;  
+    font-size:10px !important;
+    float:right;
+    text-align: center;
+    /*font-weight:
+    bold;*/
+    margin-right: 15px;
+}
+
+.ShowHideCC,.ShowHideBCC,.divCCBCC{
+    font-weight:bold;
+    font-size: 10px;
+    cursor:pointer;    
+}
+.rowBcc td *{
+    display:none;
+}
+.ShowHideCC,.ShowHideBCC{
+    cursor:pointer;    
+    text-decoration:underline;
+}
+
+.tableHeader thead th{
+    font-size:12px;
+    font-weight:bold;
+    /*border-bottom:1px solid #eebc00;*/
+}
+
+.tableHeader thead th:first{
+    font-size:10px;
+    color:black;
+    font-weight:bold;
+}
+.tableHeader thead th:last{
+    font-size:10px;
+    color:black;
+    font-weight:bold;
+}
+.header td{
+    /*background-color:#edeceb;*/
+}
+#barmenucontrol{
+    position:absolute;
+    right:200px;
+    font-size:10px;
+    height:22px;
+}
+#barmenucontrol img{
+    outline:none;
+    border:0px;
+
+}
+#barmenucontrol input{    
+    font-size:10px;
+    width:25px;
+}
+#barmenucontrol input[name=what]{
+    width:100px;
+}
+
+.header .background {    
+    height:24px;
+    font-family:arial;
+ /*   background-color:#e9e9e9;*/
+}
+.header div div {
+    float:left;
+    font-size:10px;
+    padding-top:7px;
+    padding-left: 15px;
+    background:transparent;
+}
+/*.header .folderss{
+    padding-left: 40px;
+}
+.header .options,.header .tasks{
+    padding-left: 60px;
+}*/
+
+.header a:hover{
+    text-decoration:underline;
+}
+.header a{
+    /*padding-left: 5px;*/
+}
+.backTopCompose{
+    font-size:12px;
+    width:900px;
+    height:33px;
+}
+
+.backTopCompose .send{
+	margin-left:42px;
+        outline:none;
+}
+.backTopCompose .signature{
+	margin-left:74px;
+        outline:none;
+}
+.backTopCompose .address,.backTopCompose .draft{
+	margin-left:74px;
+        outline:none;
+}
+.backTopCompose .btnAttach{
+	padding-left:68px;
+        outline:none;
+}
+.backTopCompose .addressEn{
+    margin-left:88px;
+}
+.backTopCompose .btnAttachEn{
+    padding-left:92px;
+}
+/*.backTopCompose .draft,.backTopCompose .address,.backTopCompose .signature{
+	padding-left:25px;
+}*/
+.backTopCompose div{
+	padding-top:10px;
+	float:left;	
+}
+#inputAttach{        
+    width:340px;
+    height:103px;
+    display:none;
+    position:absolute;
+    z-index:2;
+}
+
+#listAttach div{
+    float:left;
+    font-size:10px;
+    padding-right: 8px;
+}
+.flagMsgUnread{
+    float:left;
+    width:16px;
+    background: url(../../images/email.png);
+    height:16px;
+}
+.editmsgnew{
+/*    display:none;*/
+}
+.flagMsgRead{
+    float:left;
+    width:16px;
+    background: url(../../images/mail_read.png);
+    height:16px;
+}
+#logout{        
+    border:0;
+    outline:none;
+}
+#numPage{
+    color:white;
+}
+
+.btnDeleteAttach{
+    /*width:12px;*/
+    height:14px;
+    border:0px;
+    background:url(../../images/remove_attach.png) no-repeat center;    
+}
+#listAttach input[type=checkbox]{    
+    visibility: hidden;
+    /*display:none;*/
+}
+.rowAttach td *{
+    /*display:none;*/
+}
+
+#inputAttach input[type=file]{
+    font-family: verdana;
+    font-size: 10pt;
+}
+#inputAttach div{
+ /*   margin-top: 20px;
+    margin-left:10px;*/
+}
+.btnUpload,.btnIden,#inputAttach input,.btnSaveOption,.btnCancelOption,.ContInfo .btnContact, .ContInfo input[type=button], #actionToField{
+    font-size:10pt;
+    padding-left:0 !important;
+}
+.btnSaveOption,.btnCancelOption,.btnUpload{
+    margin-top: 5px;
+    width:120px;
+}
+.labelAttach{    
+    margin-left:14px;
+}
+.textAttach{
+    margin-left:14px;
+}
+.textAttach #cancelAttach,.textAttach input[type=submit]{        
+    text-indent:4px\9; /*hack ie*/
+}
+.hideBcc{
+    cursor:pointer;
+    font-size:10px;
+    font-weight: bold;
+}
+#composeInstance1{
+    padding-left:0 !important;    
+}
+#controlPage{
+    padding-top: 0px;    
+}
+#controlPage img{
+    position:relative;
+    top:4px;
+}
+#controlPage{
+    width: 120px !important;
+}
+
+#search,#searchEvent{
+    top:-3px;
+    position:relative;
+    width: 150px !important;
+}
+
+#search img,#searchEvent img{
+    position:relative;
+    top:-2px;
+    cursor:pointer;
+}
+#search,#searchEvent{
+    display:none;    
+    height:19px;    
+    text-align:left;    
+    background:url(../../images/inputsearch.png) center no-repeat;
+}
+#search input[type=text],#searchEvent input[type=text]{
+    border:0px;
+    position:relative;
+    top:-6px;
+}
+#searchEvent input[type=text]{
+    width:80px !important;
+}
+#inputSearchEvent{
+    width:80px !important;
+}
+#search input[type=button],#searchEvent input[type=button]{
+    width: 40px !important;
+}
+.j-searcher_right{
+    top:0 !important;
+    margin:0!important;
+}
+.j-searcher_right input{
+    top:0 !important;
+    margin:0!important;
+}
+#optionSearch,.menuDrop{
+    border-top:0px;
+    font-size: 12px;
+    z-index:2;
+    display:none;
+    width:135;
+    position:absolute;
+}
+
+/* root element for tabs  */
+ul.tabs,ul.tabsContactsDialog {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    height: 32px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+}
+ul.tabs li,ul.tabsContactsDialog li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    height: 31px;
+    line-height: 31px;
+    border: 1px solid #999;
+    border-left: none;
+    margin-bottom: -1px;
+/*    background: #fff0bd;*/
+    overflow: hidden;
+    position: relative;
+}
+ul.tabs li a, ul.tabsContactsDialog li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    outline: none;
+    font-size: 1.2em;
+    padding: 0 20px;
+    border: 1px solid #fff;
+}
+/*ul.tabs li a:hover, ul.tabsContactsDialog li a:hover {
+    background: #ffda4f;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabsContactsDialog li.active, html ul.tabsContactsDialog li.active a:hover{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}*/
+.tab_container {
+    border: 1px solid #999;
+    border-top: none;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    -moz-border-radius-bottomright: 5px;
+    -khtml-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -khtml-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+.tab_content,.tab_content_event{
+    padding: 20px;
+    font-size: 1.2em;
+}
+.tab_content h2,.tab_content_event {
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+    font-size: 1.8em;
+}
+.tab_content h3 a,.tab_content_event h3 a{
+    color: #254588;
+}
+.tab_content img{
+    float: left;
+    margin: 0 20px 20px 0;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+#contentOptions{
+    height:370px !important;
+    width:755px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.divSaveOption{
+    float:right;
+    padding-right: 10px;
+}
+
+.saveSuccess,.sendSuccess,.draftSuccess,.msgContact,.msgUpdateIdent,.sendFail{
+    text-align: center;
+    width:220px;
+    top:0px;
+    position:absolute;
+    left:40%;
+    right:40%;
+    display:none;
+}
+.sendFail{
+    background-color:red;
+    width:300px;
+}
+.msgContact{
+    display:none;
+    font-weight: bold;
+}
+
+.saveError{
+    text-align: center;
+    width:220px;
+    top:0px;
+    position:absolute;
+    left:40%;
+    right:40%;
+    display:none;
+}
+.dialogOptions{
+    overflow:hidden !important;
+}
+
+.tab_content *{
+    font-size:10pt;
+}
+.dialogRename{
+    display:none;
+}
+
+.contentContacts .ContGroup,.contentContacts .ContContact,.contentContacts .ContInfo{
+    float:left;    
+    height:420px;
+    margin-right: 5px;
+}
+
+
+.contentContacts .ContGroup,.contentContacts .ContContact{
+    width:19%;
+    
+}
+.contentContacts .ContInfo{
+    width:58.1%;
+}
+
+.infoCont,.divAddGroup{
+    display:none;
+}
+.contentContacts .label{
+    font-weight:bold;
+}
+#rodapeCont{
+    position:relative;top:-2px;height:15px;text-align:right;
+    
+}
+.contactPerson,.nameGroup{
+    padding:2px;
+}
+.backContact,.backGroup{
+    padding:2px;
+    cursor:pointer;
+}
+
+.ContInfo table{
+    font-size:10pt;
+}
+.fnContact,.lnContact{
+    display:none;
+}
+.content{
+    height:390px;
+    overflow:auto;
+}
+.btnRemoveContGroup{
+    padding-top:2px;
+    cursor:pointer;
+}
+.menuContact{ 
+    width:98%;
+    font-weight:bold;
+    font-size:14px;
+    height:20px;
+    margin-bottom:6px;
+    padding-bottom: 10px;
+}
+.menuContact img{
+    margin-top: 2px;
+    outline: none;
+    border:0px;
+}
+.menuContact div{
+    float:left;
+    height:30px;
+}
+.ContGroup .content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ContGroup .content li{
+    margin: 0;
+    padding: 3px 0pt 3px 16px;
+    border:1px;    
+}
+.labelNumCont{
+    /*float:right;
+    padding-right:2px;*/
+}
+.nameUSer{
+    position:relative;
+    top:-3px;
+}
+#purr-container .notice{
+    display:block;
+    visibility: visible;
+    font-size:12pt !important;
+}
+
+.menuDrop ul{
+    margin: 4;
+    padding: 0;
+    width:120px !important;
+}
+
+
+
+.menuDrop li{
+    position: relative;    
+    text-align:left;
+    list-style: none;        
+}
+.menuDrop li a,.menuDrop li a{
+    color:black;
+    display: block;
+    text-decoration: none;
+    padding:3px;
+}
+
+.menuDrop li a:hover{
+    text-decoration: none;
+    display: block;
+}
+.updateMail{
+    margin-left:12px;
+    cursor:pointer;
+}
+.deleteMsgIcon{
+    width:5px;
+    height:16px;
+    margin-left:25px;    
+}
+.printMsgIcon{
+    width:5px;
+    height:16px;
+    margin-left:1px;
+    cursor: pointer;
+}
+.newOption{
+    padding-left:10px;
+}
+.updateMail{
+    /*padding-left:20px*/
+}
+.replyMsgIcon{
+    height:16px;
+    margin-left:14px;
+    margin-left:20px\9;
+    cursor:pointer;
+}
+.replyMsgIconEn{
+    height:16px;
+    margin-left:14px;
+    margin-left:20px\9;
+    padding-right:22px;
+}
+#searchEvent,.btnDailyCalendar,.btnWeeklyCalendar,.btnMonthlyCalendar,.btnListCalendar,.btnImportEvent{
+    display:none;
+    cursor:pointer;
+}
+.forwardMsgIcon,.calendar{
+    height:16px;
+    margin-left:10px;
+    padding-right: 20px;
+    cursor:pointer;
+}
+.optionsWebmail{
+    float:left;
+    position:absolute;
+    right:40px;
+    top:5px;
+    cursor:pointer;
+    
+}
+.deleteMsgIcon{
+    cursor: pointer;
+}
+
+.optionsWebmail span,#logout span{
+    font-size: 10px !important;
+   /* position:relative;     */
+}
+#logout span{
+    position: relative;
+}
+
+.optionsWebmail span{
+    top: -3px;
+}
+#logout img{
+    position:relative;
+    top:3px;
+}
+#logout span{
+    /*top: -6px;*/
+}
+.arrow{
+    padding-left:3px;
+    position:relative;
+    top: -3px;
+}
+
+li.root img{
+    position:relative;
+    top:2;
+}
+
+#autoCompl{
+    text-aligm:left;
+    display:none;
+    z-index:2;
+    height:80px;
+    width:300px;
+    top:80;
+    position:absolute;
+    overflow:auto;
+}
+#autoCompl > ul{
+    margin: 0;
+    padding-left:0;
+}
+#autoCompl > ul > li{
+    margin: 0;
+    text-indent:8px;
+    padding: 0;    
+    list-style: none;
+    cursor:pointer;
+}
+
+#autoCompl > ul > li span{
+    font-weight:bold;
+}
+.selCont{
+    color:black;
+}
+#dialogOpMail{
+    display:none;
+}
+
+.row span{
+    color:39F;
+    font-weight:bold;
+}
+.subjectMsg{
+    font-weight:bold;
+}
+.tab_containerCon textarea{
+    width:100%;
+    height:70px;
+}
+
+.listmail .divTable{
+    display: table; height:100% ; #position: relative; overflow: hidden;
+    width:98%\9 !important;
+    height:400px\9; /*HACK IE*/
+}
+.listmail .divRow{
+    #position: absolute; #top: 50%;display: table-cell; vertical-align: middle;
+}
+.listmail .divCol{
+    #position: relative; #top: -50%;
+    #position: relative; #left: -50%;
+}
+#tableListGroups{
+    display:none;
+}
+.divRadioCompose{
+    height:25px;
+    font-weight:bold;
+}
+
+#tableListGroups ul{
+    padding-left:0px;
+    width:360px;
+    overflow:auto;
+}
+#tableListGroups ul li{ 
+    height:21px;
+    padding-top:4px;
+    text-indent:5px;
+    list-style: none;
+    cursor:pointer;
+    color:black;
+}
+#tableListGroups ul li .labelNumCont{
+    text-indent:0px !important;
+}
+.firstGroupLabel{
+   font-weight:bold;
+}
+#toFieldTo,#toFieldCC,#toFieldBCC{
+    width:376px;
+    position:relative;
+    left:-20px;
+}
+#tableListContacts_filter{
+    position:relative;
+    top:-24px;
+}
+.compose #textareaCompose{
+    width:300px !important;
+    border:0 !important;
+}
+.mail a{
+    cursor:pointer;
+}
+
+.linkInternal{
+    cursor:pointer;
+}
+#preloadMini{
+    padding-right: 10px;
+    visibility:hidden;
+}
+.hideSub{
+    cursor:pointer;
+}
+.replyMenu,.replyAllMenu{
+    cursor:pointer;
+}
+
+#uploadSucess{
+    color:green;
+    display:none;
+}
+.tdInpar{
+    background-color:white;
+}
+#barquota{      
+   border:1px solid black;
+}
+#browser{
+    overflow:auto;
+}
+.flag{
+    text-align:right;
+    margin-right: 0px;
+    padding-right:0px;
+}
+.flag{
+    text-align:right;
+    margin-right: 0px;
+    padding-right:0px;
+}
+.iconContact{
+    cursor:pointer;
+    width:19px;
+    height:14px
+}
+a{
+    color:black !important;
+}
+.tdSize{
+    text-align:center !important;
+}
+.backTopCompose a:link,.backTopCompose a:visited, .backTopCompose a:hover,
+.lineAttach a,.lineAttach a:link,
+.lineAttach a:hover,.lineAttach a:visited,#logout a,#logout a:link,
+#logout a:hover,#logout a:visited,.menuContact a,.menuContact a{
+    color:black;
+    text-decoration:none;
+}
+.saveSuccess,.sendSuccess,.draftSuccess,.msgContact,.msgUpdateIdent,.sendFail{
+    background-color:#87fd87;
+}
+.sendFail{
+    background-color:red;   
+}
+.msgContact{
+    background-color:#ff5353;
+}
+.saveError{
+    background-color:#ff3f3f;
+}
+.iconOrderAsc{
+   width:12px;
+   height:10px;
+   background: url(../../images/down_pointer.png) center no-repeat;
+
+}
+.orderDate div{
+   width:12px;
+   height:10px;
+}
+.iconOrderDsc{
+   width:12px;
+   height:10px;
+   background: url(../../images/up_pointer.png) center no-repeat;
+}
+a.orderDate:link,a.orderDate:hover,a.orderDate:visited,
+a.orderSubject:link,a.orderSubject:hover,a.orderSubject:visited,
+a.orderSize:link,a.orderSize:hover,a.orderSize:visited,
+a.orderFrom:link,a.orderFrom:hover,a.orderFrom:visited{
+    text-decoration:none !important;
+    border:0px
+    outline:none;
+}
+.orderDate img,.orderFrom img,.orderSubject img,.orderSize img{
+    display:none;
+    border:0px;
+    outline:none;
+}
+.eventNotice div{
+    font-size:10pt;
+}
+.labelTo{
+    display:none;
+}
+#guestContacts, #guestGroups{
+    width:204px;
+    height:97px;
+}    
+.fieldRequired{
+    border:1px solid red;
+    font-weight:bold;
+}

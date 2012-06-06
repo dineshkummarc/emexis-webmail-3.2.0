@@ -1,0 +1,243 @@
+# Brazilian Portuguese translation of abook_group plugin
+# for Squirrelmail
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# Fabio Marcos Pedroso Filho <fabio@unixworks.com.br>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: abook_group\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-09 11:46-0400\n"
+"PO-Revision-Date: 2004-04-07 10:50-0300\n"
+"Last-Translator: Fabio Marcos Pedroso Filho <fabio@unixworks.com.br>\n"
+"Language-Team: NONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: addrbook_search.php:323 addrbook_search.php:340
+msgid "Add"
+msgstr "Adicionar"
+
+#: abook_group_functions.php:91
+msgid "Add New Members"
+msgstr "Adicionar Novo Integrante"
+
+#: addrbook_search.php:192 addrbook_search.php:220
+msgid "Add Successful"
+msgstr "Adicionado com Sucesso"
+
+#: addrbook_search.php:310
+msgid "Add to Existing Group: "
+msgstr "Adicionar a um grupo já existente: "
+
+#: addrbook_search.php:336
+msgid "Add to New Group (supply group name):"
+msgstr "Adicionar a um novo grupo (digite o nome do novo grupo):"
+
+#: setup.php:41
+msgid "Address Groups"
+msgstr "Catálogo de Grupos"
+
+#: abook_group_PEAR_database.php:217 abook_group_PEAR_database.php:317
+#: abook_group_PEAR_database.php:385 abook_group_PEAR_database.php:453
+msgid "Addressbook is read-only"
+msgstr "Catálogo de endereços somente pode ser lido"
+
+#: addrbook_search.php:153
+msgid "All address books"
+msgstr "Todos os catálogos de endereços"
+
+#: abook_group_PEAR_database.php:487
+#, php-format
+msgid "Another group %s already exists"
+msgstr "Já existe um grupo com este nome: %s"
+
+#: modifyGroup.php:75
+msgid "Are you sure you want to delete "
+msgstr "Você confirma a remoção "
+
+#: abook_group_interface.php:175
+msgid "Close"
+msgstr ""
+
+#: addrbook_search.php:171
+msgid "Close window"
+msgstr "Fechar Janela"
+
+#: abook_group_PEAR_database.php:109 abook_group_PEAR_database.php:141
+#: abook_group_PEAR_database.php:190 abook_group_PEAR_database.php:301
+#: abook_group_PEAR_database.php:373 abook_group_PEAR_database.php:423
+#: abook_group_PEAR_database.php:506
+#, php-format
+msgid "Database error: %s"
+msgstr "Erro no banco de dados: %s"
+
+#: list_abook_group.php:75
+msgid "Delete"
+msgstr "Remover"
+
+#: modifyGroup.php:71
+msgid "Delete Group"
+msgstr "Remover Grupo"
+
+#: abook_group_interface.php:66 addrbook_search.php:39
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: abook_group_PEAR_database.php:59 abook_group_PEAR_database.php:175
+#: abook_group_PEAR_database.php:248 abook_group_PEAR_database.php:259
+#: abook_group_PEAR_database.php:329 abook_group_PEAR_database.php:338
+msgid "Global address book"
+msgstr "Catálogo de endereços"
+
+#: abook_group_PEAR_database.php:238
+#, php-format
+msgid "Group %s already exists"
+msgstr "O grupo %s já existe"
+
+#: abook_group_PEAR_database.php:404 abook_group_PEAR_database.php:472
+#, php-format
+msgid "Group %s does not exist"
+msgstr "O grupo %s não existe"
+
+#: abook_group_PEAR_database.php:436
+msgid "Group name is unchanged."
+msgstr "O nome do grupo não foi modificado"
+
+#: abook_group_PEAR_database.php:444
+msgid "Group name was empty."
+msgstr "Nome do grupo estava vazio."
+
+#: abook_group_interface.php:140 list_abook_group.php:52 setup.php:65
+msgid "Groups"
+msgstr "Grupos"
+
+#: abook_group_interface.php:67 addrbook_search.php:40
+msgid "Info"
+msgstr "Informação"
+
+#: list_abook_group.php:76
+msgid "List"
+msgstr "Lista"
+
+#: abook_group_functions.php:91
+msgid "List All Groups"
+msgstr "Listar todos os grupos"
+
+#: addrbook_search.php:168
+msgid "List all"
+msgstr "Listar todos"
+
+#: listMembers.php:90
+msgid "Members"
+msgstr "Integrantes"
+
+#: list_abook_group.php:74 modifyGroup.php:162
+msgid "Modify"
+msgstr "Modificar"
+
+#: modifyGroup.php:119
+msgid "Modify Group Name"
+msgstr "Modificar nome do grupo"
+
+#: abook_group_interface.php:65 addrbook_search.php:38
+msgid "Name"
+msgstr "Nome"
+
+#: modifyGroup.php:147
+msgid "New Group Name"
+msgstr "Novo nome do grupo"
+
+#: addrbook_search.php:201
+msgid "New Group Name is Empty"
+msgstr "Novo nome está vazio"
+
+#: modifyGroup.php:80
+msgid "No"
+msgstr "Não"
+
+#: addrbook_search.php:261 addrbook_search.php:290
+msgid "No persons matching your search was found"
+msgstr "Não foi possível encontrar ninguém"
+
+#: addrbook_search.php:327
+msgid "OR"
+msgstr "OU"
+
+#: modifyGroup.php:135
+msgid "Old Group Name"
+msgstr "Antigo nome do grupo"
+
+#: listMembers.php:137
+msgid "Remove"
+msgstr "Remover"
+
+#: listMembers.php:68
+msgid "Remove Successful"
+msgstr "Removido com sucesso"
+
+#: addrbook_search.php:167
+msgid "Search"
+msgstr "Buscar"
+
+#: addrbook_search.php:142
+#, fuzzy
+msgid "Search for name to add"
+msgstr "Procurar endereços para adicionar"
+
+#: abook_group_interface.php:74 addrbook_search.php:43
+msgid "Source"
+msgstr "Fonte"
+
+#: abook_group_interface.php:171
+msgid "There are no groups available for selection"
+msgstr "Não há grupos disponíveis para selecionar"
+
+#: addrbook_search.php:36
+msgid "Toggle All"
+msgstr "Alterar Todos"
+
+#: addrbook_search.php:244
+#, php-format
+msgid "Unable to list addresses from %s"
+msgstr "Não é possível listar endereços de %s"
+
+#: abook_group_interface.php:105
+msgid "Use Addresses"
+msgstr "Usar Endereços"
+
+#: abook_group_PEAR_database.php:280
+msgid "User Already Exists in The Group"
+msgstr "Usuário já existente no grupo"
+
+#: abook_group_PEAR_database.php:352
+msgid "User Does Not Exist in The Group"
+msgstr "Usuário não existe no grupo"
+
+#: modifyGroup.php:79
+msgid "Yes"
+msgstr "Sim"
+
+#: list_abook_group.php:91
+msgid "You Currently Do Not Have Any Groups"
+msgstr "Você ainda não tem nenhum grupo"
+
+#: listMembers.php:125
+msgid "You Currently Do Not Have Any Members In This Group"
+msgstr "Ainda não tem nenhum integrante neste grupo"
+
+#: setup.php:43
+msgid ""
+"You can create address groups and add email addresses from your address book"
+msgstr ""
+"Você pode criar grupos de endereços e enviar email de seu catálogo de "
+"endereços"
+
+#: addrbook_search.php:279
+msgid "Your search failed with the following error(s)"
+msgstr "Sua busca reportou o(s) seguinte(s) erro(s)"
+
+#: addrbook_search.php:152
+msgid "in"
+msgstr "em"

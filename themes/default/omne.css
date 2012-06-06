@@ -1,0 +1,401 @@
+@import url("left.css");
+@import url("webmail.css");
+@import url("calendar.css");
+
+body{
+    background-color:white;    
+}
+.left{
+    background-color:white;
+}
+.barcontrol>div{
+    border:1pt solid #045596;
+    background-color:white;
+}
+.right{
+    background-color:white;
+}
+.listmailHorizontal{
+    border:1pt solid #045596;
+}
+.readHorizontal{
+    border:1pt solid #045596;
+}
+
+#divisorVertical{
+    border-right:1px solid #045596;
+}
+#divisorVertical,#divisorLeft{
+    border-left:1px solid #045596;
+}
+
+.loader .text{
+    color:blue;
+    background-color:white;
+}
+
+.loader{
+    background-color:transparent;
+}
+.highlight{
+    background-color:#dcdee2 !important;
+    color:black;
+}
+
+.contextMenu {
+    border: solid 1px #CCC;
+    background: #ecedf1;
+}
+
+.contextMenu A {
+    color: #333;
+}
+
+.contextMenu LI.hover A {
+    color: #FFF;
+    background-color: #045596;
+}
+
+.contextMenu LI.disabled A {
+    color: #AAA;
+}
+
+.contextMenu LI.hover.disabled A {
+    background-color: transparent;
+}
+
+.contextMenu LI.separator {
+    border-top: solid 1px #CCC;
+}
+.dragMSg,.dropOver{
+    background-color: #becceb;
+}
+.dropMSg{
+    background-color: white;
+}
+
+
+#boxAjuda,#moveHelperContacts{
+    border:1px solid black;
+    background-color: #fff;
+}
+
+#boxAjuda li{
+    list-style-image: url('../../images/email.png');    
+}
+
+div.tableContainer {
+    border: 1px solid #963;
+}
+
+.headerMsgVer{
+    background-color:silver !important;
+    background-color:silver;    
+    border-bottom:1px solid #045596;
+    color:white;
+}
+.tableHeader{
+    background-color:#dcdee2 !important;    
+}
+.tableHeader{
+    background-color:#dcdee2 !important;
+}
+.headerMsg{ 
+    background-color:silver !important;
+}
+.headerMsg div{
+    background-color:silver !important;
+    color:white;
+}
+.gridmail,.gridmail td {
+    border-bottom-color:white !important;
+    border-top-color:white !important;
+}
+#labelBox{
+    color:white;
+    background-color:#dcdee2;
+    border-top:1px solid #045596;
+    border-bottom:1px solid #045596;
+}
+
+.labelFolder,.labelQuota,.labelListAgenda{
+    border:1px solid #045596;
+    background-color:#dcdee2;
+    color:black;
+}
+.labelFolder{
+    border-right:0px !important;
+}
+.subjectMsg{
+    border-bottom:1px solid #dcdee2;
+    border-right:1px solid #dcdee2;
+    background-color:#ecedf1 !important;
+    color:black;
+}
+
+/*.formatHeader,*/
+.formatHeader div:first{
+    background-color:silver;
+    color:white;    
+}
+.formatHeader .row span{
+    color:black;
+}
+/* Ao clicar para ler o email*/
+.readMailBack{
+    background-color:#045596 !important;
+    color:white !important
+}
+.readMailBack a:hover,.readMailBack a:visited,.readMailBack a:link,.readMailBack a{
+    background-color:transparent;
+    color:white !important
+}
+.ui-dialog-buttonset button{
+    background-color:silver;    
+}
+.textSubject{
+    background-color: transparent !important; 
+}
+#closeall{
+    border:white solid 1px;
+    background-color:#6a6a6a;
+    color:white;
+}
+
+.minicompose,.miniread,.minioptions,.minifolder,.minicontacts,.minipic{
+    border:1px groove #045596;    
+}
+
+.labelNumMSg,.labelNumCont{
+    background-color:#045596;    
+    color:white;
+}
+.compose input[type=text]{
+    border:1px solid #dcdee2 !important;
+}
+.compose td .to,.compose td .cc,.compose td .bcc,.compose td .subject,.attachLabel{
+    color:#045596;
+}
+.ShowHideCC,.ShowHideBCC,.divCCBCC{
+    color:#5a8cff;   
+}
+
+.tableHeader thead th{
+    color:black;
+    border-top:1px solid #045596;
+}
+
+.tableHeader thead th:first{
+    color:black;
+}
+.tableHeader thead th:last{
+    color:black;
+}
+
+.header .background {    
+    background:url('../../images/omne/backtop_omne.png') no-repeat;
+}
+.header div div {
+    background:transparent;
+}
+.header td{
+    border-top:1px solid #045596;
+    border-bottom:1px solid #045596;
+}
+.header td:fist{
+    border-left:1px solid silver;
+}
+.backTopCompose{
+    background:url("../../images/backtopcompose.png") no-repeat;
+}
+#inputAttach{        
+    background: url(../../images/backgroundattach.png);
+}
+
+#numPage{
+    background-color: #045596;
+    color:white;
+}
+
+.btnDeleteAttach{
+    color:#90abb8 !important;
+    background:url(../../images/remove_attach.png) no-repeat center;    
+}
+
+#inputAttach input[type=file]{
+    border: 1px solid #b0b0b0;
+    background: #ecedf1;
+    color: #585858;
+}
+
+.btnUpload,.btnDialogEvent,.btnIden,#inputAttach input,.btnSaveOption,.btnCancelOption,.ContInfo .btnContact, .ContInfo input[type=button], #actionToField{
+    background-color:white;    
+    color:black;
+}
+.hideBcc{
+    color:#045596;
+}
+#search{
+    background:url(../../images/inputsearch.png) center no-repeat;
+}
+#search input[type=text]{
+    background-color:transparent;
+}
+#optionSearch,.menuDrop{
+    border:1px solid #045596;
+    color:#045596;
+    background-color:#ecedf1;
+}
+/* root element for tabs  */
+ul.tabs,ul.tabsContactsDialog {
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+}
+ul.tabs li,ul.tabsContactsDialog li{
+    border: 1px solid #999;
+    background: #ecedf1;
+}
+ul.tabs li a, ul.tabsContactsDialog li a{
+    color: #000;
+    border: 1px solid #fff;
+}
+ul.tabs li a:hover, ul.tabsContactsDialog li a:hover {
+    background: #dcdee2;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover, html ul.tabsContactsDialog li.active, html ul.tabsContactsDialog li.active a:hover{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+.tab_container {
+    border: 1px solid #999;
+    background: #fff;
+}
+.tab_content h2 {
+    border-bottom: 1px dashed #ddd;
+}
+.tab_content h3 a{
+    color: #254588;
+}
+.tab_content img {
+    border: 1px solid #ddd;
+}
+
+#contentOptions input,textarea{
+    background-color: #ecedf1;
+}
+
+.saveSuccess,.sendSuccess,.draftSuccess,.msgContact,.msgUpdateIdent,.sendFail{
+    background-color:#87fd87;
+}
+.sendFail{
+    background-color:red;
+}
+.msgContact{    
+    background-color:#ff5353;
+}
+.saveError{
+    background-color:#ff3f3f;
+}
+.contentContacts .ContGroup,.contentContacts .ContContact,.contentContacts .ContInfo{
+    border-left: 1px solid #045596;
+    border-right: 1px solid #045596;
+    border-bottom: 1px solid #045596;
+}
+.contentContacts .label{
+    color:#045596;
+    border-bottom:1px solid #045596;
+    border-bottom:0px solid #045596\9;
+    border-top:1px solid #045596; 
+    background-color:#ecedf1;
+}
+
+.backContact,.backGroup{
+    background-color:#045596 !important;
+    color:white !important;
+}
+.menuContact{ 
+    border: 1px solid #045596;
+    background-color:#ecedf1;
+}
+.menuContact div{
+    border-right: 1px solid #045596;
+}
+.backContactCheck{
+    background-color:#EDECEB;
+    color:#5a8cff;
+}
+.left ul,.left{
+    background-color:#ecedf1;
+}
+.moveMouseFolder{
+    background-color:#becceb !important;
+}
+.menuDrop li a:hover{
+    background-color:#045596;
+    color:white;
+}
+#autoCompl{
+    background-color:#dcdee2;
+}
+
+#autoCompl > ul > li span{
+    font-weight:bold;
+}
+.selCont{
+    background-color:white !important;
+    color:black;
+}
+.row span{
+    color:39F;
+}
+.listmail .divTable{
+    display: table; height:100% ; #position: relative; overflow: hidden;
+}
+.divRadioCompose{
+    background-color:#d8d8d8;
+    color:#045596;
+}
+#tableListGroups ul li{ 
+    color:black;
+}
+.groupOdd{
+    background-color: #e2e4ff;
+}
+.compose #textareaCompose{
+    background-color: white !important;
+}
+
+.selFolder{
+    background-color: #dcdee2 !important;
+}
+#uploadSucess{
+    color:green;
+}
+.MenuReadWin,.titleAttachRead,.titleMenuFolder{
+    background-color:#dcdee2; 
+}
+
+.ui-dialog-titlebar,.ui-datepicker-header{
+    color:white !important;
+    background:url(../../images/omne/titleback_omne.png) !important;
+}
+.tdPar,.lineAttach,.lineMenuFolder{
+    background-color:#ecedf1;
+}
+.tdInpar{
+    background-color:white;
+}
+.notice-body {
+    background: url(../../images/omne/purrTopOmne.png) no-repeat left top !important;
+}
+.notice-bottom {
+    background: url(../../images/omne/purrBottomOmne.png) no-repeat left top !important;
+}
+#barquota{      
+   border:1px solid black;
+}
+.newOption{
+    color:white !important;
+}
+
+
